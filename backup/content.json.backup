@@ -1,0 +1,1539 @@
+{
+  "total_pages": 239,
+  "is_rtl": false,
+  "book_type": "image_based",
+  "pages": [
+    {
+      "page": 0,
+      "text": "Page 0 content",
+      "html": "<section class=\"book-page\" id=\"page-0\">\n    <h2>Page 0</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-000.png\" \n             alt=\"Page 0\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-000.png"
+    },
+    {
+      "page": 1,
+      "text": "Page 1 content",
+      "html": "<section class=\"book-page\" id=\"page-1\">\n    <h2>Page 1</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-001.png\" \n             alt=\"Page 1\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-001.png"
+    },
+    {
+      "page": 2,
+      "text": "Page 2 content",
+      "html": "<section class=\"book-page\" id=\"page-2\">\n    <h2>Page 2</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-002.png\" \n             alt=\"Page 2\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-002.png"
+    },
+    {
+      "page": 3,
+      "text": "Page 3 content",
+      "html": "<section class=\"book-page\" id=\"page-3\">\n    <h2>Page 3</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-003.png\" \n             alt=\"Page 3\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-003.png"
+    },
+    {
+      "page": 4,
+      "text": "Page 4 content",
+      "html": "<section class=\"book-page\" id=\"page-4\">\n    <h2>Page 4</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-004.png\" \n             alt=\"Page 4\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-004.png"
+    },
+    {
+      "page": 5,
+      "text": "Page 5 content",
+      "html": "<section class=\"book-page\" id=\"page-5\">\n    <h2>Page 5</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-005.png\" \n             alt=\"Page 5\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-005.png"
+    },
+    {
+      "page": 6,
+      "text": "Page 6 content",
+      "html": "<section class=\"book-page\" id=\"page-6\">\n    <h2>Page 6</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-006.png\" \n             alt=\"Page 6\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-006.png"
+    },
+    {
+      "page": 7,
+      "text": "Page 7 content",
+      "html": "<section class=\"book-page\" id=\"page-7\">\n    <h2>Page 7</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-007.png\" \n             alt=\"Page 7\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-007.png"
+    },
+    {
+      "page": 8,
+      "text": "Page 8 content",
+      "html": "<section class=\"book-page\" id=\"page-8\">\n    <h2>Page 8</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-008.png\" \n             alt=\"Page 8\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-008.png"
+    },
+    {
+      "page": 9,
+      "text": "Page 9 content",
+      "html": "<section class=\"book-page\" id=\"page-9\">\n    <h2>Page 9</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-009.png\" \n             alt=\"Page 9\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-009.png"
+    },
+    {
+      "page": 10,
+      "text": "Page 10 content",
+      "html": "<section class=\"book-page\" id=\"page-10\">\n    <h2>Page 10</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-010.png\" \n             alt=\"Page 10\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-010.png"
+    },
+    {
+      "page": 11,
+      "text": "Page 11 content",
+      "html": "<section class=\"book-page\" id=\"page-11\">\n    <h2>Page 11</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-011.png\" \n             alt=\"Page 11\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-011.png"
+    },
+    {
+      "page": 12,
+      "text": "Page 12 content",
+      "html": "<section class=\"book-page\" id=\"page-12\">\n    <h2>Page 12</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-012.png\" \n             alt=\"Page 12\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-012.png"
+    },
+    {
+      "page": 13,
+      "text": "Page 13 content",
+      "html": "<section class=\"book-page\" id=\"page-13\">\n    <h2>Page 13</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-013.png\" \n             alt=\"Page 13\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-013.png"
+    },
+    {
+      "page": 14,
+      "text": "Page 14 content",
+      "html": "<section class=\"book-page\" id=\"page-14\">\n    <h2>Page 14</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-014.png\" \n             alt=\"Page 14\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-014.png"
+    },
+    {
+      "page": 15,
+      "text": "Page 15 content",
+      "html": "<section class=\"book-page\" id=\"page-15\">\n    <h2>Page 15</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-015.png\" \n             alt=\"Page 15\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-015.png"
+    },
+    {
+      "page": 16,
+      "text": "Page 16 content",
+      "html": "<section class=\"book-page\" id=\"page-16\">\n    <h2>Page 16</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-016.png\" \n             alt=\"Page 16\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-016.png"
+    },
+    {
+      "page": 17,
+      "text": "Page 17 content",
+      "html": "<section class=\"book-page\" id=\"page-17\">\n    <h2>Page 17</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-017.png\" \n             alt=\"Page 17\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-017.png"
+    },
+    {
+      "page": 18,
+      "text": "Page 18 content",
+      "html": "<section class=\"book-page\" id=\"page-18\">\n    <h2>Page 18</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-018.png\" \n             alt=\"Page 18\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-018.png"
+    },
+    {
+      "page": 19,
+      "text": "Page 19 content",
+      "html": "<section class=\"book-page\" id=\"page-19\">\n    <h2>Page 19</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-019.png\" \n             alt=\"Page 19\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-019.png"
+    },
+    {
+      "page": 20,
+      "text": "Page 20 content",
+      "html": "<section class=\"book-page\" id=\"page-20\">\n    <h2>Page 20</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-020.png\" \n             alt=\"Page 20\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-020.png"
+    },
+    {
+      "page": 21,
+      "text": "Page 21 content",
+      "html": "<section class=\"book-page\" id=\"page-21\">\n    <h2>Page 21</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-021.png\" \n             alt=\"Page 21\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-021.png"
+    },
+    {
+      "page": 22,
+      "text": "Page 22 content",
+      "html": "<section class=\"book-page\" id=\"page-22\">\n    <h2>Page 22</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-022.png\" \n             alt=\"Page 22\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-022.png"
+    },
+    {
+      "page": 23,
+      "text": "Page 23 content",
+      "html": "<section class=\"book-page\" id=\"page-23\">\n    <h2>Page 23</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-023.png\" \n             alt=\"Page 23\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-023.png"
+    },
+    {
+      "page": 24,
+      "text": "Page 24 content",
+      "html": "<section class=\"book-page\" id=\"page-24\">\n    <h2>Page 24</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-024.png\" \n             alt=\"Page 24\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-024.png"
+    },
+    {
+      "page": 25,
+      "text": "Page 25 content",
+      "html": "<section class=\"book-page\" id=\"page-25\">\n    <h2>Page 25</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-025.png\" \n             alt=\"Page 25\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-025.png"
+    },
+    {
+      "page": 26,
+      "text": "Page 26 content",
+      "html": "<section class=\"book-page\" id=\"page-26\">\n    <h2>Page 26</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-026.png\" \n             alt=\"Page 26\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-026.png"
+    },
+    {
+      "page": 27,
+      "text": "Page 27 content",
+      "html": "<section class=\"book-page\" id=\"page-27\">\n    <h2>Page 27</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-027.png\" \n             alt=\"Page 27\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-027.png"
+    },
+    {
+      "page": 28,
+      "text": "Page 28 content",
+      "html": "<section class=\"book-page\" id=\"page-28\">\n    <h2>Page 28</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-028.png\" \n             alt=\"Page 28\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-028.png"
+    },
+    {
+      "page": 29,
+      "text": "Page 29 content",
+      "html": "<section class=\"book-page\" id=\"page-29\">\n    <h2>Page 29</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-029.png\" \n             alt=\"Page 29\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-029.png"
+    },
+    {
+      "page": 30,
+      "text": "Page 30 content",
+      "html": "<section class=\"book-page\" id=\"page-30\">\n    <h2>Page 30</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-030.png\" \n             alt=\"Page 30\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-030.png"
+    },
+    {
+      "page": 31,
+      "text": "Page 31 content",
+      "html": "<section class=\"book-page\" id=\"page-31\">\n    <h2>Page 31</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-031.png\" \n             alt=\"Page 31\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-031.png"
+    },
+    {
+      "page": 32,
+      "text": "Page 32 content",
+      "html": "<section class=\"book-page\" id=\"page-32\">\n    <h2>Page 32</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-032.png\" \n             alt=\"Page 32\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-032.png"
+    },
+    {
+      "page": 33,
+      "text": "Page 33 content",
+      "html": "<section class=\"book-page\" id=\"page-33\">\n    <h2>Page 33</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-033.png\" \n             alt=\"Page 33\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-033.png"
+    },
+    {
+      "page": 34,
+      "text": "Page 34 content",
+      "html": "<section class=\"book-page\" id=\"page-34\">\n    <h2>Page 34</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-034.png\" \n             alt=\"Page 34\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-034.png"
+    },
+    {
+      "page": 35,
+      "text": "Page 35 content",
+      "html": "<section class=\"book-page\" id=\"page-35\">\n    <h2>Page 35</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-035.png\" \n             alt=\"Page 35\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-035.png"
+    },
+    {
+      "page": 36,
+      "text": "Page 36 content",
+      "html": "<section class=\"book-page\" id=\"page-36\">\n    <h2>Page 36</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-036.png\" \n             alt=\"Page 36\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-036.png"
+    },
+    {
+      "page": 37,
+      "text": "Page 37 content",
+      "html": "<section class=\"book-page\" id=\"page-37\">\n    <h2>Page 37</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-037.png\" \n             alt=\"Page 37\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-037.png"
+    },
+    {
+      "page": 38,
+      "text": "Page 38 content",
+      "html": "<section class=\"book-page\" id=\"page-38\">\n    <h2>Page 38</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-038.png\" \n             alt=\"Page 38\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-038.png"
+    },
+    {
+      "page": 39,
+      "text": "Page 39 content",
+      "html": "<section class=\"book-page\" id=\"page-39\">\n    <h2>Page 39</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-039.png\" \n             alt=\"Page 39\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-039.png"
+    },
+    {
+      "page": 40,
+      "text": "Page 40 content",
+      "html": "<section class=\"book-page\" id=\"page-40\">\n    <h2>Page 40</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-040.png\" \n             alt=\"Page 40\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-040.png"
+    },
+    {
+      "page": 41,
+      "text": "Page 41 content",
+      "html": "<section class=\"book-page\" id=\"page-41\">\n    <h2>Page 41</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-041.png\" \n             alt=\"Page 41\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-041.png"
+    },
+    {
+      "page": 42,
+      "text": "Page 42 content",
+      "html": "<section class=\"book-page\" id=\"page-42\">\n    <h2>Page 42</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-042.png\" \n             alt=\"Page 42\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-042.png"
+    },
+    {
+      "page": 43,
+      "text": "Page 43 content",
+      "html": "<section class=\"book-page\" id=\"page-43\">\n    <h2>Page 43</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-043.png\" \n             alt=\"Page 43\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-043.png"
+    },
+    {
+      "page": 44,
+      "text": "Page 44 content",
+      "html": "<section class=\"book-page\" id=\"page-44\">\n    <h2>Page 44</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-044.png\" \n             alt=\"Page 44\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-044.png"
+    },
+    {
+      "page": 45,
+      "text": "Page 45 content",
+      "html": "<section class=\"book-page\" id=\"page-45\">\n    <h2>Page 45</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-045.png\" \n             alt=\"Page 45\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-045.png"
+    },
+    {
+      "page": 46,
+      "text": "Page 46 content",
+      "html": "<section class=\"book-page\" id=\"page-46\">\n    <h2>Page 46</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-046.png\" \n             alt=\"Page 46\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-046.png"
+    },
+    {
+      "page": 47,
+      "text": "Page 47 content",
+      "html": "<section class=\"book-page\" id=\"page-47\">\n    <h2>Page 47</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-047.png\" \n             alt=\"Page 47\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-047.png"
+    },
+    {
+      "page": 48,
+      "text": "Page 48 content",
+      "html": "<section class=\"book-page\" id=\"page-48\">\n    <h2>Page 48</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-048.png\" \n             alt=\"Page 48\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-048.png"
+    },
+    {
+      "page": 49,
+      "text": "Page 49 content",
+      "html": "<section class=\"book-page\" id=\"page-49\">\n    <h2>Page 49</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-049.png\" \n             alt=\"Page 49\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-049.png"
+    },
+    {
+      "page": 50,
+      "text": "Page 50 content",
+      "html": "<section class=\"book-page\" id=\"page-50\">\n    <h2>Page 50</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-050.png\" \n             alt=\"Page 50\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-050.png"
+    },
+    {
+      "page": 51,
+      "text": "Page 51 content",
+      "html": "<section class=\"book-page\" id=\"page-51\">\n    <h2>Page 51</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-051.png\" \n             alt=\"Page 51\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-051.png"
+    },
+    {
+      "page": 52,
+      "text": "Page 52 content",
+      "html": "<section class=\"book-page\" id=\"page-52\">\n    <h2>Page 52</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-052.png\" \n             alt=\"Page 52\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-052.png"
+    },
+    {
+      "page": 53,
+      "text": "Page 53 content",
+      "html": "<section class=\"book-page\" id=\"page-53\">\n    <h2>Page 53</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-053.png\" \n             alt=\"Page 53\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-053.png"
+    },
+    {
+      "page": 54,
+      "text": "Page 54 content",
+      "html": "<section class=\"book-page\" id=\"page-54\">\n    <h2>Page 54</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-054.png\" \n             alt=\"Page 54\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-054.png"
+    },
+    {
+      "page": 55,
+      "text": "Page 55 content",
+      "html": "<section class=\"book-page\" id=\"page-55\">\n    <h2>Page 55</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-055.png\" \n             alt=\"Page 55\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-055.png"
+    },
+    {
+      "page": 56,
+      "text": "Page 56 content",
+      "html": "<section class=\"book-page\" id=\"page-56\">\n    <h2>Page 56</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-056.png\" \n             alt=\"Page 56\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-056.png"
+    },
+    {
+      "page": 57,
+      "text": "Page 57 content",
+      "html": "<section class=\"book-page\" id=\"page-57\">\n    <h2>Page 57</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-057.png\" \n             alt=\"Page 57\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-057.png"
+    },
+    {
+      "page": 58,
+      "text": "Page 58 content",
+      "html": "<section class=\"book-page\" id=\"page-58\">\n    <h2>Page 58</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-058.png\" \n             alt=\"Page 58\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-058.png"
+    },
+    {
+      "page": 59,
+      "text": "Page 59 content",
+      "html": "<section class=\"book-page\" id=\"page-59\">\n    <h2>Page 59</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-059.png\" \n             alt=\"Page 59\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-059.png"
+    },
+    {
+      "page": 60,
+      "text": "Page 60 content",
+      "html": "<section class=\"book-page\" id=\"page-60\">\n    <h2>Page 60</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-060.png\" \n             alt=\"Page 60\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-060.png"
+    },
+    {
+      "page": 61,
+      "text": "Page 61 content",
+      "html": "<section class=\"book-page\" id=\"page-61\">\n    <h2>Page 61</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-061.png\" \n             alt=\"Page 61\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-061.png"
+    },
+    {
+      "page": 62,
+      "text": "Page 62 content",
+      "html": "<section class=\"book-page\" id=\"page-62\">\n    <h2>Page 62</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-062.png\" \n             alt=\"Page 62\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-062.png"
+    },
+    {
+      "page": 63,
+      "text": "Page 63 content",
+      "html": "<section class=\"book-page\" id=\"page-63\">\n    <h2>Page 63</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-063.png\" \n             alt=\"Page 63\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-063.png"
+    },
+    {
+      "page": 64,
+      "text": "Page 64 content",
+      "html": "<section class=\"book-page\" id=\"page-64\">\n    <h2>Page 64</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-064.png\" \n             alt=\"Page 64\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-064.png"
+    },
+    {
+      "page": 65,
+      "text": "Page 65 content",
+      "html": "<section class=\"book-page\" id=\"page-65\">\n    <h2>Page 65</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-065.png\" \n             alt=\"Page 65\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-065.png"
+    },
+    {
+      "page": 66,
+      "text": "Page 66 content",
+      "html": "<section class=\"book-page\" id=\"page-66\">\n    <h2>Page 66</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-066.png\" \n             alt=\"Page 66\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-066.png"
+    },
+    {
+      "page": 67,
+      "text": "Page 67 content",
+      "html": "<section class=\"book-page\" id=\"page-67\">\n    <h2>Page 67</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-067.png\" \n             alt=\"Page 67\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-067.png"
+    },
+    {
+      "page": 68,
+      "text": "Page 68 content",
+      "html": "<section class=\"book-page\" id=\"page-68\">\n    <h2>Page 68</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-068.png\" \n             alt=\"Page 68\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-068.png"
+    },
+    {
+      "page": 69,
+      "text": "Page 69 content",
+      "html": "<section class=\"book-page\" id=\"page-69\">\n    <h2>Page 69</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-069.png\" \n             alt=\"Page 69\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-069.png"
+    },
+    {
+      "page": 70,
+      "text": "Page 70 content",
+      "html": "<section class=\"book-page\" id=\"page-70\">\n    <h2>Page 70</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-070.png\" \n             alt=\"Page 70\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-070.png"
+    },
+    {
+      "page": 71,
+      "text": "Page 71 content",
+      "html": "<section class=\"book-page\" id=\"page-71\">\n    <h2>Page 71</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-071.png\" \n             alt=\"Page 71\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-071.png"
+    },
+    {
+      "page": 72,
+      "text": "Page 72 content",
+      "html": "<section class=\"book-page\" id=\"page-72\">\n    <h2>Page 72</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-072.png\" \n             alt=\"Page 72\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-072.png"
+    },
+    {
+      "page": 73,
+      "text": "Page 73 content",
+      "html": "<section class=\"book-page\" id=\"page-73\">\n    <h2>Page 73</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-073.png\" \n             alt=\"Page 73\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-073.png"
+    },
+    {
+      "page": 74,
+      "text": "Page 74 content",
+      "html": "<section class=\"book-page\" id=\"page-74\">\n    <h2>Page 74</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-074.png\" \n             alt=\"Page 74\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-074.png"
+    },
+    {
+      "page": 75,
+      "text": "Page 75 content",
+      "html": "<section class=\"book-page\" id=\"page-75\">\n    <h2>Page 75</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-075.png\" \n             alt=\"Page 75\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-075.png"
+    },
+    {
+      "page": 76,
+      "text": "Page 76 content",
+      "html": "<section class=\"book-page\" id=\"page-76\">\n    <h2>Page 76</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-076.png\" \n             alt=\"Page 76\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-076.png"
+    },
+    {
+      "page": 77,
+      "text": "Page 77 content",
+      "html": "<section class=\"book-page\" id=\"page-77\">\n    <h2>Page 77</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-077.png\" \n             alt=\"Page 77\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-077.png"
+    },
+    {
+      "page": 78,
+      "text": "Page 78 content",
+      "html": "<section class=\"book-page\" id=\"page-78\">\n    <h2>Page 78</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-078.png\" \n             alt=\"Page 78\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-078.png"
+    },
+    {
+      "page": 79,
+      "text": "Page 79 content",
+      "html": "<section class=\"book-page\" id=\"page-79\">\n    <h2>Page 79</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-079.png\" \n             alt=\"Page 79\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-079.png"
+    },
+    {
+      "page": 80,
+      "text": "Page 80 content",
+      "html": "<section class=\"book-page\" id=\"page-80\">\n    <h2>Page 80</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-080.png\" \n             alt=\"Page 80\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-080.png"
+    },
+    {
+      "page": 81,
+      "text": "Page 81 content",
+      "html": "<section class=\"book-page\" id=\"page-81\">\n    <h2>Page 81</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-081.png\" \n             alt=\"Page 81\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-081.png"
+    },
+    {
+      "page": 82,
+      "text": "Page 82 content",
+      "html": "<section class=\"book-page\" id=\"page-82\">\n    <h2>Page 82</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-082.png\" \n             alt=\"Page 82\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-082.png"
+    },
+    {
+      "page": 83,
+      "text": "Page 83 content",
+      "html": "<section class=\"book-page\" id=\"page-83\">\n    <h2>Page 83</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-083.png\" \n             alt=\"Page 83\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-083.png"
+    },
+    {
+      "page": 84,
+      "text": "Page 84 content",
+      "html": "<section class=\"book-page\" id=\"page-84\">\n    <h2>Page 84</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-084.png\" \n             alt=\"Page 84\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-084.png"
+    },
+    {
+      "page": 85,
+      "text": "Page 85 content",
+      "html": "<section class=\"book-page\" id=\"page-85\">\n    <h2>Page 85</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-085.png\" \n             alt=\"Page 85\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-085.png"
+    },
+    {
+      "page": 86,
+      "text": "Page 86 content",
+      "html": "<section class=\"book-page\" id=\"page-86\">\n    <h2>Page 86</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-086.png\" \n             alt=\"Page 86\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-086.png"
+    },
+    {
+      "page": 87,
+      "text": "Page 87 content",
+      "html": "<section class=\"book-page\" id=\"page-87\">\n    <h2>Page 87</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-087.png\" \n             alt=\"Page 87\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-087.png"
+    },
+    {
+      "page": 88,
+      "text": "Page 88 content",
+      "html": "<section class=\"book-page\" id=\"page-88\">\n    <h2>Page 88</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-088.png\" \n             alt=\"Page 88\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-088.png"
+    },
+    {
+      "page": 89,
+      "text": "Page 89 content",
+      "html": "<section class=\"book-page\" id=\"page-89\">\n    <h2>Page 89</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-089.png\" \n             alt=\"Page 89\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-089.png"
+    },
+    {
+      "page": 90,
+      "text": "Page 90 content",
+      "html": "<section class=\"book-page\" id=\"page-90\">\n    <h2>Page 90</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-090.png\" \n             alt=\"Page 90\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-090.png"
+    },
+    {
+      "page": 91,
+      "text": "Page 91 content",
+      "html": "<section class=\"book-page\" id=\"page-91\">\n    <h2>Page 91</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-091.png\" \n             alt=\"Page 91\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-091.png"
+    },
+    {
+      "page": 92,
+      "text": "Page 92 content",
+      "html": "<section class=\"book-page\" id=\"page-92\">\n    <h2>Page 92</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-092.png\" \n             alt=\"Page 92\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-092.png"
+    },
+    {
+      "page": 93,
+      "text": "Page 93 content",
+      "html": "<section class=\"book-page\" id=\"page-93\">\n    <h2>Page 93</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-093.png\" \n             alt=\"Page 93\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-093.png"
+    },
+    {
+      "page": 94,
+      "text": "Page 94 content",
+      "html": "<section class=\"book-page\" id=\"page-94\">\n    <h2>Page 94</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-094.png\" \n             alt=\"Page 94\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-094.png"
+    },
+    {
+      "page": 95,
+      "text": "Page 95 content",
+      "html": "<section class=\"book-page\" id=\"page-95\">\n    <h2>Page 95</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-095.png\" \n             alt=\"Page 95\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-095.png"
+    },
+    {
+      "page": 96,
+      "text": "Page 96 content",
+      "html": "<section class=\"book-page\" id=\"page-96\">\n    <h2>Page 96</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-096.png\" \n             alt=\"Page 96\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-096.png"
+    },
+    {
+      "page": 97,
+      "text": "Page 97 content",
+      "html": "<section class=\"book-page\" id=\"page-97\">\n    <h2>Page 97</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-097.png\" \n             alt=\"Page 97\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-097.png"
+    },
+    {
+      "page": 98,
+      "text": "Page 98 content",
+      "html": "<section class=\"book-page\" id=\"page-98\">\n    <h2>Page 98</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-098.png\" \n             alt=\"Page 98\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-098.png"
+    },
+    {
+      "page": 99,
+      "text": "Page 99 content",
+      "html": "<section class=\"book-page\" id=\"page-99\">\n    <h2>Page 99</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-099.png\" \n             alt=\"Page 99\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-099.png"
+    },
+    {
+      "page": 100,
+      "text": "Page 100 content",
+      "html": "<section class=\"book-page\" id=\"page-100\">\n    <h2>Page 100</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-100.png\" \n             alt=\"Page 100\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-100.png"
+    },
+    {
+      "page": 101,
+      "text": "Page 101 content",
+      "html": "<section class=\"book-page\" id=\"page-101\">\n    <h2>Page 101</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-101.png\" \n             alt=\"Page 101\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-101.png"
+    },
+    {
+      "page": 102,
+      "text": "Page 102 content",
+      "html": "<section class=\"book-page\" id=\"page-102\">\n    <h2>Page 102</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-102.png\" \n             alt=\"Page 102\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-102.png"
+    },
+    {
+      "page": 103,
+      "text": "Page 103 content",
+      "html": "<section class=\"book-page\" id=\"page-103\">\n    <h2>Page 103</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-103.png\" \n             alt=\"Page 103\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-103.png"
+    },
+    {
+      "page": 104,
+      "text": "Page 104 content",
+      "html": "<section class=\"book-page\" id=\"page-104\">\n    <h2>Page 104</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-104.png\" \n             alt=\"Page 104\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-104.png"
+    },
+    {
+      "page": 105,
+      "text": "Page 105 content",
+      "html": "<section class=\"book-page\" id=\"page-105\">\n    <h2>Page 105</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-105.png\" \n             alt=\"Page 105\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-105.png"
+    },
+    {
+      "page": 106,
+      "text": "Page 106 content",
+      "html": "<section class=\"book-page\" id=\"page-106\">\n    <h2>Page 106</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-106.png\" \n             alt=\"Page 106\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-106.png"
+    },
+    {
+      "page": 107,
+      "text": "Page 107 content",
+      "html": "<section class=\"book-page\" id=\"page-107\">\n    <h2>Page 107</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-107.png\" \n             alt=\"Page 107\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-107.png"
+    },
+    {
+      "page": 108,
+      "text": "Page 108 content",
+      "html": "<section class=\"book-page\" id=\"page-108\">\n    <h2>Page 108</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-108.png\" \n             alt=\"Page 108\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-108.png"
+    },
+    {
+      "page": 109,
+      "text": "Page 109 content",
+      "html": "<section class=\"book-page\" id=\"page-109\">\n    <h2>Page 109</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-109.png\" \n             alt=\"Page 109\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-109.png"
+    },
+    {
+      "page": 110,
+      "text": "Page 110 content",
+      "html": "<section class=\"book-page\" id=\"page-110\">\n    <h2>Page 110</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-110.png\" \n             alt=\"Page 110\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-110.png"
+    },
+    {
+      "page": 111,
+      "text": "Page 111 content",
+      "html": "<section class=\"book-page\" id=\"page-111\">\n    <h2>Page 111</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-111.png\" \n             alt=\"Page 111\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-111.png"
+    },
+    {
+      "page": 112,
+      "text": "Page 112 content",
+      "html": "<section class=\"book-page\" id=\"page-112\">\n    <h2>Page 112</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-112.png\" \n             alt=\"Page 112\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-112.png"
+    },
+    {
+      "page": 113,
+      "text": "Page 113 content",
+      "html": "<section class=\"book-page\" id=\"page-113\">\n    <h2>Page 113</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-113.png\" \n             alt=\"Page 113\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-113.png"
+    },
+    {
+      "page": 114,
+      "text": "Page 114 content",
+      "html": "<section class=\"book-page\" id=\"page-114\">\n    <h2>Page 114</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-114.png\" \n             alt=\"Page 114\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-114.png"
+    },
+    {
+      "page": 115,
+      "text": "Page 115 content",
+      "html": "<section class=\"book-page\" id=\"page-115\">\n    <h2>Page 115</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-115.png\" \n             alt=\"Page 115\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-115.png"
+    },
+    {
+      "page": 116,
+      "text": "Page 116 content",
+      "html": "<section class=\"book-page\" id=\"page-116\">\n    <h2>Page 116</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-116.png\" \n             alt=\"Page 116\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-116.png"
+    },
+    {
+      "page": 117,
+      "text": "Page 117 content",
+      "html": "<section class=\"book-page\" id=\"page-117\">\n    <h2>Page 117</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-117.png\" \n             alt=\"Page 117\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-117.png"
+    },
+    {
+      "page": 118,
+      "text": "Page 118 content",
+      "html": "<section class=\"book-page\" id=\"page-118\">\n    <h2>Page 118</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-118.png\" \n             alt=\"Page 118\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-118.png"
+    },
+    {
+      "page": 119,
+      "text": "Page 119 content",
+      "html": "<section class=\"book-page\" id=\"page-119\">\n    <h2>Page 119</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-119.png\" \n             alt=\"Page 119\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-119.png"
+    },
+    {
+      "page": 120,
+      "text": "Page 120 content",
+      "html": "<section class=\"book-page\" id=\"page-120\">\n    <h2>Page 120</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-120.png\" \n             alt=\"Page 120\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-120.png"
+    },
+    {
+      "page": 121,
+      "text": "Page 121 content",
+      "html": "<section class=\"book-page\" id=\"page-121\">\n    <h2>Page 121</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-121.png\" \n             alt=\"Page 121\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-121.png"
+    },
+    {
+      "page": 122,
+      "text": "Page 122 content",
+      "html": "<section class=\"book-page\" id=\"page-122\">\n    <h2>Page 122</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-122.png\" \n             alt=\"Page 122\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-122.png"
+    },
+    {
+      "page": 123,
+      "text": "Page 123 content",
+      "html": "<section class=\"book-page\" id=\"page-123\">\n    <h2>Page 123</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-123.png\" \n             alt=\"Page 123\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-123.png"
+    },
+    {
+      "page": 124,
+      "text": "Page 124 content",
+      "html": "<section class=\"book-page\" id=\"page-124\">\n    <h2>Page 124</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-124.png\" \n             alt=\"Page 124\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-124.png"
+    },
+    {
+      "page": 125,
+      "text": "Page 125 content",
+      "html": "<section class=\"book-page\" id=\"page-125\">\n    <h2>Page 125</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-125.png\" \n             alt=\"Page 125\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-125.png"
+    },
+    {
+      "page": 126,
+      "text": "Page 126 content",
+      "html": "<section class=\"book-page\" id=\"page-126\">\n    <h2>Page 126</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-126.png\" \n             alt=\"Page 126\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-126.png"
+    },
+    {
+      "page": 127,
+      "text": "Page 127 content",
+      "html": "<section class=\"book-page\" id=\"page-127\">\n    <h2>Page 127</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-127.png\" \n             alt=\"Page 127\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-127.png"
+    },
+    {
+      "page": 128,
+      "text": "Page 128 content",
+      "html": "<section class=\"book-page\" id=\"page-128\">\n    <h2>Page 128</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-128.png\" \n             alt=\"Page 128\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-128.png"
+    },
+    {
+      "page": 129,
+      "text": "Page 129 content",
+      "html": "<section class=\"book-page\" id=\"page-129\">\n    <h2>Page 129</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-129.png\" \n             alt=\"Page 129\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-129.png"
+    },
+    {
+      "page": 130,
+      "text": "Page 130 content",
+      "html": "<section class=\"book-page\" id=\"page-130\">\n    <h2>Page 130</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-130.png\" \n             alt=\"Page 130\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-130.png"
+    },
+    {
+      "page": 131,
+      "text": "Page 131 content",
+      "html": "<section class=\"book-page\" id=\"page-131\">\n    <h2>Page 131</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-131.png\" \n             alt=\"Page 131\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-131.png"
+    },
+    {
+      "page": 132,
+      "text": "Page 132 content",
+      "html": "<section class=\"book-page\" id=\"page-132\">\n    <h2>Page 132</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-132.png\" \n             alt=\"Page 132\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-132.png"
+    },
+    {
+      "page": 133,
+      "text": "Page 133 content",
+      "html": "<section class=\"book-page\" id=\"page-133\">\n    <h2>Page 133</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-133.png\" \n             alt=\"Page 133\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-133.png"
+    },
+    {
+      "page": 134,
+      "text": "Page 134 content",
+      "html": "<section class=\"book-page\" id=\"page-134\">\n    <h2>Page 134</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-134.png\" \n             alt=\"Page 134\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-134.png"
+    },
+    {
+      "page": 135,
+      "text": "Page 135 content",
+      "html": "<section class=\"book-page\" id=\"page-135\">\n    <h2>Page 135</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-135.png\" \n             alt=\"Page 135\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-135.png"
+    },
+    {
+      "page": 136,
+      "text": "Page 136 content",
+      "html": "<section class=\"book-page\" id=\"page-136\">\n    <h2>Page 136</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-136.png\" \n             alt=\"Page 136\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-136.png"
+    },
+    {
+      "page": 137,
+      "text": "Page 137 content",
+      "html": "<section class=\"book-page\" id=\"page-137\">\n    <h2>Page 137</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-137.png\" \n             alt=\"Page 137\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-137.png"
+    },
+    {
+      "page": 138,
+      "text": "Page 138 content",
+      "html": "<section class=\"book-page\" id=\"page-138\">\n    <h2>Page 138</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-138.png\" \n             alt=\"Page 138\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-138.png"
+    },
+    {
+      "page": 139,
+      "text": "Page 139 content",
+      "html": "<section class=\"book-page\" id=\"page-139\">\n    <h2>Page 139</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-139.png\" \n             alt=\"Page 139\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-139.png"
+    },
+    {
+      "page": 140,
+      "text": "Page 140 content",
+      "html": "<section class=\"book-page\" id=\"page-140\">\n    <h2>Page 140</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-140.png\" \n             alt=\"Page 140\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-140.png"
+    },
+    {
+      "page": 141,
+      "text": "Page 141 content",
+      "html": "<section class=\"book-page\" id=\"page-141\">\n    <h2>Page 141</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-141.png\" \n             alt=\"Page 141\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-141.png"
+    },
+    {
+      "page": 142,
+      "text": "Page 142 content",
+      "html": "<section class=\"book-page\" id=\"page-142\">\n    <h2>Page 142</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-142.png\" \n             alt=\"Page 142\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-142.png"
+    },
+    {
+      "page": 143,
+      "text": "Page 143 content",
+      "html": "<section class=\"book-page\" id=\"page-143\">\n    <h2>Page 143</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-143.png\" \n             alt=\"Page 143\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-143.png"
+    },
+    {
+      "page": 144,
+      "text": "Page 144 content",
+      "html": "<section class=\"book-page\" id=\"page-144\">\n    <h2>Page 144</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-144.png\" \n             alt=\"Page 144\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-144.png"
+    },
+    {
+      "page": 145,
+      "text": "Page 145 content",
+      "html": "<section class=\"book-page\" id=\"page-145\">\n    <h2>Page 145</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-145.png\" \n             alt=\"Page 145\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-145.png"
+    },
+    {
+      "page": 146,
+      "text": "Page 146 content",
+      "html": "<section class=\"book-page\" id=\"page-146\">\n    <h2>Page 146</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-146.png\" \n             alt=\"Page 146\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-146.png"
+    },
+    {
+      "page": 147,
+      "text": "Page 147 content",
+      "html": "<section class=\"book-page\" id=\"page-147\">\n    <h2>Page 147</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-147.png\" \n             alt=\"Page 147\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-147.png"
+    },
+    {
+      "page": 148,
+      "text": "Page 148 content",
+      "html": "<section class=\"book-page\" id=\"page-148\">\n    <h2>Page 148</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-148.png\" \n             alt=\"Page 148\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-148.png"
+    },
+    {
+      "page": 149,
+      "text": "Page 149 content",
+      "html": "<section class=\"book-page\" id=\"page-149\">\n    <h2>Page 149</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-149.png\" \n             alt=\"Page 149\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-149.png"
+    },
+    {
+      "page": 150,
+      "text": "Page 150 content",
+      "html": "<section class=\"book-page\" id=\"page-150\">\n    <h2>Page 150</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-150.png\" \n             alt=\"Page 150\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-150.png"
+    },
+    {
+      "page": 151,
+      "text": "Page 151 content",
+      "html": "<section class=\"book-page\" id=\"page-151\">\n    <h2>Page 151</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-151.png\" \n             alt=\"Page 151\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-151.png"
+    },
+    {
+      "page": 152,
+      "text": "Page 152 content",
+      "html": "<section class=\"book-page\" id=\"page-152\">\n    <h2>Page 152</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-152.png\" \n             alt=\"Page 152\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-152.png"
+    },
+    {
+      "page": 153,
+      "text": "Page 153 content",
+      "html": "<section class=\"book-page\" id=\"page-153\">\n    <h2>Page 153</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-153.png\" \n             alt=\"Page 153\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-153.png"
+    },
+    {
+      "page": 154,
+      "text": "Page 154 content",
+      "html": "<section class=\"book-page\" id=\"page-154\">\n    <h2>Page 154</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-154.png\" \n             alt=\"Page 154\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-154.png"
+    },
+    {
+      "page": 155,
+      "text": "Page 155 content",
+      "html": "<section class=\"book-page\" id=\"page-155\">\n    <h2>Page 155</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-155.png\" \n             alt=\"Page 155\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-155.png"
+    },
+    {
+      "page": 156,
+      "text": "Page 156 content",
+      "html": "<section class=\"book-page\" id=\"page-156\">\n    <h2>Page 156</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-156.png\" \n             alt=\"Page 156\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-156.png"
+    },
+    {
+      "page": 157,
+      "text": "Page 157 content",
+      "html": "<section class=\"book-page\" id=\"page-157\">\n    <h2>Page 157</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-157.png\" \n             alt=\"Page 157\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-157.png"
+    },
+    {
+      "page": 158,
+      "text": "Page 158 content",
+      "html": "<section class=\"book-page\" id=\"page-158\">\n    <h2>Page 158</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-158.png\" \n             alt=\"Page 158\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-158.png"
+    },
+    {
+      "page": 159,
+      "text": "Page 159 content",
+      "html": "<section class=\"book-page\" id=\"page-159\">\n    <h2>Page 159</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-159.png\" \n             alt=\"Page 159\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-159.png"
+    },
+    {
+      "page": 160,
+      "text": "Page 160 content",
+      "html": "<section class=\"book-page\" id=\"page-160\">\n    <h2>Page 160</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-160.png\" \n             alt=\"Page 160\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-160.png"
+    },
+    {
+      "page": 161,
+      "text": "Page 161 content",
+      "html": "<section class=\"book-page\" id=\"page-161\">\n    <h2>Page 161</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-161.png\" \n             alt=\"Page 161\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-161.png"
+    },
+    {
+      "page": 162,
+      "text": "Page 162 content",
+      "html": "<section class=\"book-page\" id=\"page-162\">\n    <h2>Page 162</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-162.png\" \n             alt=\"Page 162\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-162.png"
+    },
+    {
+      "page": 163,
+      "text": "Page 163 content",
+      "html": "<section class=\"book-page\" id=\"page-163\">\n    <h2>Page 163</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-163.png\" \n             alt=\"Page 163\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-163.png"
+    },
+    {
+      "page": 164,
+      "text": "Page 164 content",
+      "html": "<section class=\"book-page\" id=\"page-164\">\n    <h2>Page 164</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-164.png\" \n             alt=\"Page 164\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-164.png"
+    },
+    {
+      "page": 165,
+      "text": "Page 165 content",
+      "html": "<section class=\"book-page\" id=\"page-165\">\n    <h2>Page 165</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-165.png\" \n             alt=\"Page 165\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-165.png"
+    },
+    {
+      "page": 166,
+      "text": "Page 166 content",
+      "html": "<section class=\"book-page\" id=\"page-166\">\n    <h2>Page 166</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-166.png\" \n             alt=\"Page 166\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-166.png"
+    },
+    {
+      "page": 167,
+      "text": "Page 167 content",
+      "html": "<section class=\"book-page\" id=\"page-167\">\n    <h2>Page 167</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-167.png\" \n             alt=\"Page 167\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-167.png"
+    },
+    {
+      "page": 168,
+      "text": "Page 168 content",
+      "html": "<section class=\"book-page\" id=\"page-168\">\n    <h2>Page 168</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-168.png\" \n             alt=\"Page 168\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-168.png"
+    },
+    {
+      "page": 169,
+      "text": "Page 169 content",
+      "html": "<section class=\"book-page\" id=\"page-169\">\n    <h2>Page 169</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-169.png\" \n             alt=\"Page 169\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-169.png"
+    },
+    {
+      "page": 170,
+      "text": "Page 170 content",
+      "html": "<section class=\"book-page\" id=\"page-170\">\n    <h2>Page 170</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-170.png\" \n             alt=\"Page 170\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-170.png"
+    },
+    {
+      "page": 171,
+      "text": "Page 171 content",
+      "html": "<section class=\"book-page\" id=\"page-171\">\n    <h2>Page 171</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-171.png\" \n             alt=\"Page 171\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-171.png"
+    },
+    {
+      "page": 172,
+      "text": "Page 172 content",
+      "html": "<section class=\"book-page\" id=\"page-172\">\n    <h2>Page 172</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-172.png\" \n             alt=\"Page 172\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-172.png"
+    },
+    {
+      "page": 173,
+      "text": "Page 173 content",
+      "html": "<section class=\"book-page\" id=\"page-173\">\n    <h2>Page 173</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-173.png\" \n             alt=\"Page 173\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-173.png"
+    },
+    {
+      "page": 174,
+      "text": "Page 174 content",
+      "html": "<section class=\"book-page\" id=\"page-174\">\n    <h2>Page 174</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-174.png\" \n             alt=\"Page 174\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-174.png"
+    },
+    {
+      "page": 175,
+      "text": "Page 175 content",
+      "html": "<section class=\"book-page\" id=\"page-175\">\n    <h2>Page 175</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-175.png\" \n             alt=\"Page 175\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-175.png"
+    },
+    {
+      "page": 176,
+      "text": "Page 176 content",
+      "html": "<section class=\"book-page\" id=\"page-176\">\n    <h2>Page 176</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-176.png\" \n             alt=\"Page 176\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-176.png"
+    },
+    {
+      "page": 177,
+      "text": "Page 177 content",
+      "html": "<section class=\"book-page\" id=\"page-177\">\n    <h2>Page 177</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-177.png\" \n             alt=\"Page 177\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-177.png"
+    },
+    {
+      "page": 178,
+      "text": "Page 178 content",
+      "html": "<section class=\"book-page\" id=\"page-178\">\n    <h2>Page 178</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-178.png\" \n             alt=\"Page 178\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-178.png"
+    },
+    {
+      "page": 179,
+      "text": "Page 179 content",
+      "html": "<section class=\"book-page\" id=\"page-179\">\n    <h2>Page 179</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-179.png\" \n             alt=\"Page 179\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-179.png"
+    },
+    {
+      "page": 180,
+      "text": "Page 180 content",
+      "html": "<section class=\"book-page\" id=\"page-180\">\n    <h2>Page 180</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-180.png\" \n             alt=\"Page 180\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-180.png"
+    },
+    {
+      "page": 181,
+      "text": "Page 181 content",
+      "html": "<section class=\"book-page\" id=\"page-181\">\n    <h2>Page 181</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-181.png\" \n             alt=\"Page 181\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-181.png"
+    },
+    {
+      "page": 182,
+      "text": "Page 182 content",
+      "html": "<section class=\"book-page\" id=\"page-182\">\n    <h2>Page 182</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-182.png\" \n             alt=\"Page 182\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-182.png"
+    },
+    {
+      "page": 183,
+      "text": "Page 183 content",
+      "html": "<section class=\"book-page\" id=\"page-183\">\n    <h2>Page 183</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-183.png\" \n             alt=\"Page 183\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-183.png"
+    },
+    {
+      "page": 184,
+      "text": "Page 184 content",
+      "html": "<section class=\"book-page\" id=\"page-184\">\n    <h2>Page 184</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-184.png\" \n             alt=\"Page 184\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-184.png"
+    },
+    {
+      "page": 185,
+      "text": "Page 185 content",
+      "html": "<section class=\"book-page\" id=\"page-185\">\n    <h2>Page 185</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-185.png\" \n             alt=\"Page 185\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-185.png"
+    },
+    {
+      "page": 186,
+      "text": "Page 186 content",
+      "html": "<section class=\"book-page\" id=\"page-186\">\n    <h2>Page 186</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-186.png\" \n             alt=\"Page 186\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-186.png"
+    },
+    {
+      "page": 187,
+      "text": "Page 187 content",
+      "html": "<section class=\"book-page\" id=\"page-187\">\n    <h2>Page 187</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-187.png\" \n             alt=\"Page 187\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-187.png"
+    },
+    {
+      "page": 188,
+      "text": "Page 188 content",
+      "html": "<section class=\"book-page\" id=\"page-188\">\n    <h2>Page 188</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-188.png\" \n             alt=\"Page 188\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-188.png"
+    },
+    {
+      "page": 189,
+      "text": "Page 189 content",
+      "html": "<section class=\"book-page\" id=\"page-189\">\n    <h2>Page 189</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-189.png\" \n             alt=\"Page 189\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-189.png"
+    },
+    {
+      "page": 190,
+      "text": "Page 190 content",
+      "html": "<section class=\"book-page\" id=\"page-190\">\n    <h2>Page 190</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-190.png\" \n             alt=\"Page 190\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-190.png"
+    },
+    {
+      "page": 191,
+      "text": "Page 191 content",
+      "html": "<section class=\"book-page\" id=\"page-191\">\n    <h2>Page 191</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-191.png\" \n             alt=\"Page 191\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-191.png"
+    },
+    {
+      "page": 192,
+      "text": "Page 192 content",
+      "html": "<section class=\"book-page\" id=\"page-192\">\n    <h2>Page 192</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-192.png\" \n             alt=\"Page 192\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-192.png"
+    },
+    {
+      "page": 193,
+      "text": "Page 193 content",
+      "html": "<section class=\"book-page\" id=\"page-193\">\n    <h2>Page 193</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-193.png\" \n             alt=\"Page 193\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-193.png"
+    },
+    {
+      "page": 194,
+      "text": "Page 194 content",
+      "html": "<section class=\"book-page\" id=\"page-194\">\n    <h2>Page 194</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-194.png\" \n             alt=\"Page 194\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-194.png"
+    },
+    {
+      "page": 195,
+      "text": "Page 195 content",
+      "html": "<section class=\"book-page\" id=\"page-195\">\n    <h2>Page 195</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-195.png\" \n             alt=\"Page 195\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-195.png"
+    },
+    {
+      "page": 196,
+      "text": "Page 196 content",
+      "html": "<section class=\"book-page\" id=\"page-196\">\n    <h2>Page 196</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-196.png\" \n             alt=\"Page 196\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-196.png"
+    },
+    {
+      "page": 197,
+      "text": "Page 197 content",
+      "html": "<section class=\"book-page\" id=\"page-197\">\n    <h2>Page 197</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-197.png\" \n             alt=\"Page 197\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-197.png"
+    },
+    {
+      "page": 198,
+      "text": "Page 198 content",
+      "html": "<section class=\"book-page\" id=\"page-198\">\n    <h2>Page 198</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-198.png\" \n             alt=\"Page 198\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-198.png"
+    },
+    {
+      "page": 199,
+      "text": "Page 199 content",
+      "html": "<section class=\"book-page\" id=\"page-199\">\n    <h2>Page 199</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-199.png\" \n             alt=\"Page 199\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-199.png"
+    },
+    {
+      "page": 200,
+      "text": "Page 200 content",
+      "html": "<section class=\"book-page\" id=\"page-200\">\n    <h2>Page 200</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-200.png\" \n             alt=\"Page 200\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-200.png"
+    },
+    {
+      "page": 201,
+      "text": "Page 201 content",
+      "html": "<section class=\"book-page\" id=\"page-201\">\n    <h2>Page 201</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-201.png\" \n             alt=\"Page 201\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-201.png"
+    },
+    {
+      "page": 202,
+      "text": "Page 202 content",
+      "html": "<section class=\"book-page\" id=\"page-202\">\n    <h2>Page 202</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-202.png\" \n             alt=\"Page 202\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-202.png"
+    },
+    {
+      "page": 203,
+      "text": "Page 203 content",
+      "html": "<section class=\"book-page\" id=\"page-203\">\n    <h2>Page 203</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-203.png\" \n             alt=\"Page 203\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-203.png"
+    },
+    {
+      "page": 204,
+      "text": "Page 204 content",
+      "html": "<section class=\"book-page\" id=\"page-204\">\n    <h2>Page 204</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-204.png\" \n             alt=\"Page 204\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-204.png"
+    },
+    {
+      "page": 205,
+      "text": "Page 205 content",
+      "html": "<section class=\"book-page\" id=\"page-205\">\n    <h2>Page 205</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-205.png\" \n             alt=\"Page 205\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-205.png"
+    },
+    {
+      "page": 206,
+      "text": "Page 206 content",
+      "html": "<section class=\"book-page\" id=\"page-206\">\n    <h2>Page 206</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-206.png\" \n             alt=\"Page 206\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-206.png"
+    },
+    {
+      "page": 207,
+      "text": "Page 207 content",
+      "html": "<section class=\"book-page\" id=\"page-207\">\n    <h2>Page 207</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-207.png\" \n             alt=\"Page 207\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-207.png"
+    },
+    {
+      "page": 208,
+      "text": "Page 208 content",
+      "html": "<section class=\"book-page\" id=\"page-208\">\n    <h2>Page 208</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-208.png\" \n             alt=\"Page 208\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-208.png"
+    },
+    {
+      "page": 209,
+      "text": "Page 209 content",
+      "html": "<section class=\"book-page\" id=\"page-209\">\n    <h2>Page 209</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-209.png\" \n             alt=\"Page 209\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-209.png"
+    },
+    {
+      "page": 210,
+      "text": "Page 210 content",
+      "html": "<section class=\"book-page\" id=\"page-210\">\n    <h2>Page 210</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-210.png\" \n             alt=\"Page 210\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-210.png"
+    },
+    {
+      "page": 211,
+      "text": "Page 211 content",
+      "html": "<section class=\"book-page\" id=\"page-211\">\n    <h2>Page 211</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-211.png\" \n             alt=\"Page 211\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-211.png"
+    },
+    {
+      "page": 212,
+      "text": "Page 212 content",
+      "html": "<section class=\"book-page\" id=\"page-212\">\n    <h2>Page 212</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-212.png\" \n             alt=\"Page 212\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-212.png"
+    },
+    {
+      "page": 213,
+      "text": "Page 213 content",
+      "html": "<section class=\"book-page\" id=\"page-213\">\n    <h2>Page 213</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-213.png\" \n             alt=\"Page 213\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-213.png"
+    },
+    {
+      "page": 214,
+      "text": "Page 214 content",
+      "html": "<section class=\"book-page\" id=\"page-214\">\n    <h2>Page 214</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-214.png\" \n             alt=\"Page 214\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-214.png"
+    },
+    {
+      "page": 215,
+      "text": "Page 215 content",
+      "html": "<section class=\"book-page\" id=\"page-215\">\n    <h2>Page 215</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-215.png\" \n             alt=\"Page 215\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-215.png"
+    },
+    {
+      "page": 216,
+      "text": "Page 216 content",
+      "html": "<section class=\"book-page\" id=\"page-216\">\n    <h2>Page 216</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-216.png\" \n             alt=\"Page 216\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-216.png"
+    },
+    {
+      "page": 217,
+      "text": "Page 217 content",
+      "html": "<section class=\"book-page\" id=\"page-217\">\n    <h2>Page 217</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-217.png\" \n             alt=\"Page 217\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-217.png"
+    },
+    {
+      "page": 218,
+      "text": "Page 218 content",
+      "html": "<section class=\"book-page\" id=\"page-218\">\n    <h2>Page 218</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-218.png\" \n             alt=\"Page 218\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-218.png"
+    },
+    {
+      "page": 219,
+      "text": "Page 219 content",
+      "html": "<section class=\"book-page\" id=\"page-219\">\n    <h2>Page 219</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-219.png\" \n             alt=\"Page 219\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-219.png"
+    },
+    {
+      "page": 220,
+      "text": "Page 220 content",
+      "html": "<section class=\"book-page\" id=\"page-220\">\n    <h2>Page 220</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-220.png\" \n             alt=\"Page 220\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-220.png"
+    },
+    {
+      "page": 221,
+      "text": "Page 221 content",
+      "html": "<section class=\"book-page\" id=\"page-221\">\n    <h2>Page 221</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-221.png\" \n             alt=\"Page 221\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-221.png"
+    },
+    {
+      "page": 222,
+      "text": "Page 222 content",
+      "html": "<section class=\"book-page\" id=\"page-222\">\n    <h2>Page 222</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-222.png\" \n             alt=\"Page 222\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-222.png"
+    },
+    {
+      "page": 223,
+      "text": "Page 223 content",
+      "html": "<section class=\"book-page\" id=\"page-223\">\n    <h2>Page 223</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-223.png\" \n             alt=\"Page 223\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-223.png"
+    },
+    {
+      "page": 224,
+      "text": "Page 224 content",
+      "html": "<section class=\"book-page\" id=\"page-224\">\n    <h2>Page 224</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-224.png\" \n             alt=\"Page 224\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-224.png"
+    },
+    {
+      "page": 225,
+      "text": "Page 225 content",
+      "html": "<section class=\"book-page\" id=\"page-225\">\n    <h2>Page 225</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-225.png\" \n             alt=\"Page 225\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-225.png"
+    },
+    {
+      "page": 226,
+      "text": "Page 226 content",
+      "html": "<section class=\"book-page\" id=\"page-226\">\n    <h2>Page 226</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-226.png\" \n             alt=\"Page 226\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-226.png"
+    },
+    {
+      "page": 227,
+      "text": "Page 227 content",
+      "html": "<section class=\"book-page\" id=\"page-227\">\n    <h2>Page 227</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-227.png\" \n             alt=\"Page 227\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-227.png"
+    },
+    {
+      "page": 228,
+      "text": "Page 228 content",
+      "html": "<section class=\"book-page\" id=\"page-228\">\n    <h2>Page 228</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-228.png\" \n             alt=\"Page 228\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-228.png"
+    },
+    {
+      "page": 229,
+      "text": "Page 229 content",
+      "html": "<section class=\"book-page\" id=\"page-229\">\n    <h2>Page 229</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-229.png\" \n             alt=\"Page 229\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-229.png"
+    },
+    {
+      "page": 230,
+      "text": "Page 230 content",
+      "html": "<section class=\"book-page\" id=\"page-230\">\n    <h2>Page 230</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-230.png\" \n             alt=\"Page 230\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-230.png"
+    },
+    {
+      "page": 231,
+      "text": "Page 231 content",
+      "html": "<section class=\"book-page\" id=\"page-231\">\n    <h2>Page 231</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-231.png\" \n             alt=\"Page 231\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-231.png"
+    },
+    {
+      "page": 232,
+      "text": "Page 232 content",
+      "html": "<section class=\"book-page\" id=\"page-232\">\n    <h2>Page 232</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-232.png\" \n             alt=\"Page 232\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-232.png"
+    },
+    {
+      "page": 233,
+      "text": "Page 233 content",
+      "html": "<section class=\"book-page\" id=\"page-233\">\n    <h2>Page 233</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-233.png\" \n             alt=\"Page 233\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-233.png"
+    },
+    {
+      "page": 234,
+      "text": "Page 234 content",
+      "html": "<section class=\"book-page\" id=\"page-234\">\n    <h2>Page 234</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-234.png\" \n             alt=\"Page 234\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-234.png"
+    },
+    {
+      "page": 235,
+      "text": "Page 235 content",
+      "html": "<section class=\"book-page\" id=\"page-235\">\n    <h2>Page 235</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-235.png\" \n             alt=\"Page 235\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-235.png"
+    },
+    {
+      "page": 236,
+      "text": "Page 236 content",
+      "html": "<section class=\"book-page\" id=\"page-236\">\n    <h2>Page 236</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-236.png\" \n             alt=\"Page 236\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-236.png"
+    },
+    {
+      "page": 237,
+      "text": "Page 237 content",
+      "html": "<section class=\"book-page\" id=\"page-237\">\n    <h2>Page 237</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-237.png\" \n             alt=\"Page 237\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-237.png"
+    },
+    {
+      "page": 238,
+      "text": "Page 238 content",
+      "html": "<section class=\"book-page\" id=\"page-238\">\n    <h2>Page 238</h2>\n    <div class=\"page-image-container\">\n        <img src=\"assets/images/page-238.png\" \n             alt=\"Page 238\" \n             loading=\"lazy\" \n             class=\"page-image\">\n    </div>\n</section>",
+      "image": "page-238.png"
+    }
+  ],
+  "toc": [
+    {
+      "title": "Pages 0-9",
+      "page": 0
+    },
+    {
+      "title": "Pages 10-19",
+      "page": 10
+    },
+    {
+      "title": "Pages 20-29",
+      "page": 20
+    },
+    {
+      "title": "Pages 30-39",
+      "page": 30
+    },
+    {
+      "title": "Pages 40-49",
+      "page": 40
+    },
+    {
+      "title": "Pages 50-59",
+      "page": 50
+    },
+    {
+      "title": "Pages 60-69",
+      "page": 60
+    },
+    {
+      "title": "Pages 70-79",
+      "page": 70
+    },
+    {
+      "title": "Pages 80-89",
+      "page": 80
+    },
+    {
+      "title": "Pages 90-99",
+      "page": 90
+    },
+    {
+      "title": "Pages 100-109",
+      "page": 100
+    },
+    {
+      "title": "Pages 110-119",
+      "page": 110
+    },
+    {
+      "title": "Pages 120-129",
+      "page": 120
+    },
+    {
+      "title": "Pages 130-139",
+      "page": 130
+    },
+    {
+      "title": "Pages 140-149",
+      "page": 140
+    },
+    {
+      "title": "Pages 150-159",
+      "page": 150
+    },
+    {
+      "title": "Pages 160-169",
+      "page": 160
+    },
+    {
+      "title": "Pages 170-179",
+      "page": 170
+    },
+    {
+      "title": "Pages 180-189",
+      "page": 180
+    },
+    {
+      "title": "Pages 190-199",
+      "page": 190
+    },
+    {
+      "title": "Pages 200-209",
+      "page": 200
+    },
+    {
+      "title": "Pages 210-219",
+      "page": 210
+    },
+    {
+      "title": "Pages 220-229",
+      "page": 220
+    },
+    {
+      "title": "Pages 230-238",
+      "page": 230
+    }
+  ]
+}

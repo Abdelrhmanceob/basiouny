@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة ملفات القرآن | العارض</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/platform.css?v=20260422-1">
+</head>
+<body class="rtl dark viewer-mode">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html"><span class="brand-badge">Q</span><span>أرشيف القرآن</span></a>
+      <button class="icon-btn mobile-toggle" data-mobile-toggle aria-label="تبديل قائمة التنقل">☰</button>
+      <nav class="nav-links" data-nav-links>
+        <a class="nav-link" href="index.html">الرئيسية</a>
+        <a class="nav-link" href="library.html">المكتبة</a>
+        <a class="nav-link" href="viewer.html">العارض</a>
+        <a class="nav-link" href="categories.html">التصنيفات</a>
+        <a class="nav-link" href="search.html">البحث</a>
+        <a class="nav-link" href="dashboard.html">لوحة التحكم</a>
+        <a class="nav-link" href="about.html">من نحن</a>
+        <a class="nav-link" href="contact.html">تواصل معنا</a>
+      </nav>
+      <div class="top-actions">
+        <button class="icon-btn" data-lang-toggle aria-label="تبديل اتجاه الصفحة">EN</button>
+        <button class="icon-btn" data-dark-toggle aria-label="تبديل الوضع الليلي">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container viewer-shell">
+    <section class="cinematic-viewer" data-cinematic-root>
+      <aside class="cinematic-sidebar" data-sidebar>
+        <div class="sidebar-head">
+          <h2>فهرس المستند</h2>
+          <button class="icon-btn" data-sidebar-toggle aria-label="طي القائمة">⟨</button>
+        </div>
+        <div class="viewer-search-wrap">
+          <input type="search" class="search-input" data-index-search placeholder="ابحث داخل الفهرس..." aria-label="بحث الفهرس">
+        </div>
+        <div class="index-caption">الفهرس الداخلي للمستند</div>
+        <div class="index-list" data-index-list aria-live="polite"></div>
+      </aside>
+
+      <div class="cinematic-stage-wrap">
+        <button class="sidebar-fab" data-sidebar-toggle aria-label="فتح الفهرس">☰</button>
+        <div class="viewer-meta-bar">
+          <div class="meta-section">
+            <span class="meta-label">القسم الحالي</span>
+            <strong data-section-title>جار تحميل الفهرس...</strong>
+          </div>
+          <div class="meta-tags">
+            <span class="tag" data-page-indicator>1 / 604</span>
+            <span class="tag" data-zoom-indicator>100%</span>
+            <div id="pageselector-component-container" class="page-selector" aria-label="محدد الصفحات">
+              <span class="page-selector-label">اذهب إلى</span>
+              <input type="number" min="1" value="1" data-page-input aria-label="رقم الصفحة">
+              <span class="page-selector-total" data-page-total>/ 604</span>
+              <button class="icon-btn" type="button" data-page-go aria-label="انتقال للصفحة" title="انتقال للصفحة">↵</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cinematic-stage" data-stage>
+          <div class="pattern-overlay" aria-hidden="true"></div>
+          <div class="page-glow" aria-hidden="true"></div>
+          <div class="canvas-frame" data-canvas-frame>
+            <canvas data-pdf-canvas></canvas>
+          </div>
+          <div class="section-flash" data-section-flash></div>
+        </div>
+
+        <div class="floating-controls" data-float-controls>
+          <button class="icon-btn" data-prev-page aria-label="الصفحة السابقة" title="الصفحة السابقة">⟨</button>
+          <button class="icon-btn" data-next-page aria-label="الصفحة التالية" title="الصفحة التالية">⟩</button>
+          <button class="icon-btn" data-zoom-out aria-label="تصغير" title="تصغير">－</button>
+          <button class="icon-btn" data-zoom-in aria-label="تكبير" title="تكبير">＋</button>
+          <button class="icon-btn" data-download-pdf aria-label="تحميل الملف" title="تحميل الملف">⬇</button>
+          <button class="icon-btn" data-fullscreen aria-label="وضع ملء الشاشة" title="وضع ملء الشاشة">⛶</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><div class="stack"><strong>أرشيف القرآن</strong><p class="muted">تجربة قراءة سينمائية مع تنقل ذكي للفهرس والنتائج.</p></div><nav class="footer-links"><a href="index.html">الرئيسية</a><a href="library.html">المكتبة</a><a href="viewer.html">العارض</a><a href="categories.html">التصنيفات</a><a href="search.html">البحث</a><a href="dashboard.html">لوحة التحكم</a><a href="about.html">من نحن</a><a href="contact.html">تواصل معنا</a></nav></div></footer>
+
+  <script src="assets/js/platform.js?v=20260422-1"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.js"></script>
+  <script src="assets/js/viewer.js?v=20260422-1"></script>
+</body>
+</html>

@@ -1,0 +1,730 @@
+{
+  "toc": [
+    {
+      "title": "فهرس الكتاب",
+      "page": 1,
+      "type": "section"
+    },
+    {
+      "title": "المبحث الأول: القرآن الكريم فضله وآداب تلاوته",
+      "page": 2,
+      "type": "section"
+    },
+    {
+      "title": "المبحث الثاني: مدخل إلى علم التجويد",
+      "page": 3,
+      "type": "section"
+    },
+    {
+      "title": "المبحث الثالث: الاستعاذة والبسملة",
+      "page": 4,
+      "type": "section"
+    },
+    {
+      "title": "المبحث الرابع: حكم النون والميم المشددتين",
+      "page": 5,
+      "type": "section"
+    },
+    {
+      "title": "المبحث الخامس: أحكام النون الساكنة والتنوين",
+      "page": 6,
+      "type": "section"
+    },
+    {
+      "title": "المبحث السادس: أحكام الميم الساكنة",
+      "page": 7,
+      "type": "section"
+    },
+    {
+      "title": "المبحث السابع: أحكام اللامات السواكن",
+      "page": 8,
+      "type": "section"
+    },
+    {
+      "title": "المبحث الثامن: المد والقصر",
+      "page": 9,
+      "type": "section"
+    },
+    {
+      "title": "اللحن وأقسامه",
+      "page": 45,
+      "type": "entry"
+    },
+    {
+      "title": "التلقي من أفواه المشايخ",
+      "page": 47,
+      "type": "entry"
+    },
+    {
+      "title": "التعريف بالإمام عاصم",
+      "page": 48,
+      "type": "entry"
+    },
+    {
+      "title": "التعريف بالإمام حفص",
+      "page": 49,
+      "type": "entry"
+    },
+    {
+      "title": "۞ المبحث الثالث: الاستعاذة والبسملة",
+      "page": 50,
+      "type": "section"
+    },
+    {
+      "title": "أوجه الاستعاذة والبسملة مع أول السورة",
+      "page": 51,
+      "type": "subsection"
+    },
+    {
+      "title": "● عند الابتداء بأول السورة",
+      "page": 51,
+      "type": "subentry"
+    },
+    {
+      "title": "● الابتداء بغير أول السورة",
+      "page": 53,
+      "type": "subentry"
+    },
+    {
+      "title": "حكم البسملة بين السورتين",
+      "page": 54,
+      "type": "subsection"
+    },
+    {
+      "title": "۞ المبحث الرابع: حكم النون والميم المشددتين",
+      "page": 56,
+      "type": "section"
+    },
+    {
+      "title": "الغنة والخيشوم والحركة",
+      "page": 57,
+      "type": "subsection"
+    },
+    {
+      "title": "أمثلة على النون المشددة والميم المشددة",
+      "page": 58,
+      "type": "subsection"
+    },
+    {
+      "title": "۞ المبحث الخامس: أحكام النون الساكنة والتنوين",
+      "page": 60,
+      "type": "section"
+    },
+    {
+      "title": "كيف نتعرف على شكل النون الساكنة والتنوين في المصحف الشريف؟",
+      "page": 62,
+      "type": "subsection"
+    },
+    {
+      "title": "الإظهار الحلقي",
+      "page": 63,
+      "type": "subsection"
+    },
+    {
+      "title": "الإدغام",
+      "page": 65,
+      "type": "subsection"
+    },
+    {
+      "title": "الإقلاب",
+      "page": 68,
+      "type": "subsection"
+    },
+    {
+      "title": "الإخفاء الحقيقي",
+      "page": 68,
+      "type": "subsection"
+    },
+    {
+      "title": "۞ المبحث السادس: أحكام الميم الساكنة",
+      "page": 71,
+      "type": "section"
+    },
+    {
+      "title": "كيف نتعرف على شكل الميم الساكنة في المصحف الشريف؟",
+      "page": 73,
+      "type": "subsection"
+    },
+    {
+      "title": "الإخفاء الشفوي",
+      "page": 73,
+      "type": "subsection"
+    },
+    {
+      "title": "الإدغام",
+      "page": 74,
+      "type": "subsection"
+    },
+    {
+      "title": "الإظهار الشفوي",
+      "page": 74,
+      "type": "subsection"
+    },
+    {
+      "title": "۞ المبحث السابع: أحكام اللامات السواكن",
+      "page": 77,
+      "type": "section"
+    },
+    {
+      "title": "لام ال: أولاً",
+      "page": 79,
+      "type": "subsection"
+    },
+    {
+      "title": "لام الفعل: ثانياً",
+      "page": 81,
+      "type": "subsection"
+    },
+    {
+      "title": "لام الحرف: ثالثاً",
+      "page": 82,
+      "type": "subsection"
+    },
+    {
+      "title": "لام الاسم الأصلية: رابعاً",
+      "page": 82,
+      "type": "subsection"
+    },
+    {
+      "title": "۞ المبحث الثامن: المد والقصر",
+      "page": 84,
+      "type": "section"
+    },
+    {
+      "title": "تعريف المد والقصر",
+      "page": 86,
+      "type": "subsection"
+    },
+    {
+      "title": "المد واللين وأحرفهما",
+      "page": 86,
+      "type": "subsection"
+    },
+    {
+      "title": "المد الطبيعي (الأصلي): أولاً",
+      "page": 87,
+      "type": "subsection"
+    },
+    {
+      "title": "المد غير الطبيعي (الفرعي): ثانياً",
+      "page": 87,
+      "type": "subsection"
+    },
+    {
+      "title": "أنواع المدود التي يسببها الهمز:",
+      "page": 88,
+      "type": "subsection"
+    },
+    {
+      "title": "١- المد الواجب المتصل",
+      "page": 88,
+      "type": "subentry"
+    },
+    {
+      "title": "٢- المد المنفصل",
+      "page": 89,
+      "type": "subentry"
+    },
+    {
+      "title": "٣- مد البدل",
+      "page": 89,
+      "type": "subentry"
+    },
+    {
+      "title": "أنواع المدود التي يسببها السكون:",
+      "page": 90,
+      "type": "subsection"
+    },
+    {
+      "title": "١- المد العارض للسكون",
+      "page": 90,
+      "type": "subentry"
+    },
+    {
+      "title": "٢- المد اللازم",
+      "page": 91,
+      "type": "subentry"
+    },
+    {
+      "title": "تنبيهات مهمة، و ما يراعى لحفص عن عاصم من طريق الشاطبية عند مد المنفصل والمتصل أربع أو خمس حركات",
+      "page": 96,
+      "type": "subsection"
+    },
+    {
+      "title": "۞ المبحث التاسع: هاء الكناية",
+      "page": 103,
+      "type": "section"
+    },
+    {
+      "title": "تعريف هاء الكناية",
+      "page": 104,
+      "type": "subsection"
+    },
+    {
+      "title": "الحالة الأولى: أن تقع بين حرفين متحركين",
+      "page": 105,
+      "type": "subsection"
+    },
+    {
+      "title": "الحالة الثانية: أن تقع بين ساكنين",
+      "page": 106,
+      "type": "subsection"
+    },
+    {
+      "title": "الحالة الثالثة: أن يكون ما قبلها متحركاً وما بعدها ساكناً",
+      "page": 106,
+      "type": "subsection"
+    },
+    {
+      "title": "الحالة الرابعة: أن يكون ما قبلها ساكناً وما بعدها متحركاً",
+      "page": 106,
+      "type": "subsection"
+    },
+    {
+      "title": "۞ المبحث العاشر: المخارج والصفات ومخارج الحروف",
+      "page": 109,
+      "type": "section"
+    },
+    {
+      "title": "تمهيد وفوائد دراسة هذا الباب",
+      "page": 110,
+      "type": "subsection"
+    },
+    {
+      "title": "مخارج الحروف:",
+      "page": 112,
+      "type": "subsection"
+    },
+    {
+      "title": "● تمهيد",
+      "page": 112,
+      "type": "subentry"
+    },
+    {
+      "title": "● المخارج :",
+      "page": 114,
+      "type": "subentry"
+    },
+    {
+      "title": "● الجوف: أولاً",
+      "page": 115,
+      "type": "subentry"
+    },
+    {
+      "title": "● الحلق: ثانياً",
+      "page": 115,
+      "type": "subentry"
+    },
+    {
+      "title": "● اللسان: ثالثاً",
+      "page": 115,
+      "type": "subentry"
+    },
+    {
+      "title": "● الشفتان: رابعاً",
+      "page": 117,
+      "type": "subentry"
+    },
+    {
+      "title": "● الخيشوم: خامساً",
+      "page": 117,
+      "type": "subentry"
+    },
+    {
+      "title": "۞ المبحث الحادي عشر: صفات الحروف",
+      "page": 120,
+      "type": "section"
+    },
+    {
+      "title": "تعريف الصفات",
+      "page": 121,
+      "type": "subsection"
+    },
+    {
+      "title": "الصفات الأصلية (الذاتية)",
+      "page": 121,
+      "type": "subsection"
+    },
+    {
+      "title": "الصفات العرضية",
+      "page": 121,
+      "type": "subsection"
+    },
+    {
+      "title": "الصفات التي لها ضد: أولاً",
+      "page": 123,
+      "type": "subsection"
+    },
+    {
+      "title": "الصفات التي لا ضد لها: ثانياً",
+      "page": 125,
+      "type": "subsection"
+    },
+    {
+      "title": "كيف تستخرج صفات كل حرف",
+      "page": 127,
+      "type": "subsection"
+    },
+    {
+      "title": "تقسيم الصفات إلى قوية وضعيفة",
+      "page": 129,
+      "type": "subsection"
+    },
+    {
+      "title": "جدول يوضح مخارج حروف الهجاء وصفاتها وحكمها",
+      "page": 135,
+      "type": "subsection"
+    },
+    {
+      "title": "۞ المبحث الثاني عشر: التفخيم والترقيق",
+      "page": 135,
+      "type": "section"
+    },
+    {
+      "title": "ما يفخم دائماً: أولاً",
+      "page": 137,
+      "type": "subsection"
+    },
+    {
+      "title": "● الأحرف المفخمة دائماً ومراتب التفخيم",
+      "page": 137,
+      "type": "subentry"
+    },
+    {
+      "title": "ما يفخم أحياناً ويرقق أحياناً: ثانياً",
+      "page": 138,
+      "type": "subsection"
+    },
+    {
+      "title": "● الألف اللينة",
+      "page": 138,
+      "type": "subentry"
+    },
+    {
+      "title": "● غنة إخفاء النون الساكنة والتنوين",
+      "page": 139,
+      "type": "subentry"
+    },
+    {
+      "title": "● اللام من لفظ الجلالة",
+      "page": 139,
+      "type": "subentry"
+    },
+    {
+      "title": "● الراء",
+      "page": 141,
+      "type": "subentry"
+    },
+    {
+      "title": "ما يرقق دائماً: ثالثاً",
+      "page": 144,
+      "type": "subsection"
+    },
+    {
+      "title": "۞ المبحث الثالث عشر: ملحوظات نطقية عند النطق ببعض الحروف الهجائية في كتاب رب البرية",
+      "page": 145,
+      "type": "section"
+    },
+    {
+      "title": "۞ المبحث الرابع عشر: المثلان والمتقاربان والمتجانسان والمتباعدان",
+      "page": 155,
+      "type": "section"
+    },
+    {
+      "title": "المثلان: أولاً",
+      "page": 156,
+      "type": "subsection"
+    },
+    {
+      "title": "● المثلان الصغير",
+      "page": 157,
+      "type": "subentry"
+    },
+    {
+      "title": "● المثلان الكبير",
+      "page": 158,
+      "type": "subentry"
+    },
+    {
+      "title": "● المثلان المطلق",
+      "page": 158,
+      "type": "subentry"
+    },
+    {
+      "title": "المتقاربان: ثانياً",
+      "page": 158,
+      "type": "subsection"
+    },
+    {
+      "title": "● المتقاربان الصغير",
+      "page": 158,
+      "type": "subentry"
+    },
+    {
+      "title": "● المتقاربان الكبير",
+      "page": 159,
+      "type": "subentry"
+    },
+    {
+      "title": "● المتقاربان المطلق",
+      "page": 159,
+      "type": "subentry"
+    },
+    {
+      "title": "المتجانسان: ثالثاً",
+      "page": 159,
+      "type": "subsection"
+    },
+    {
+      "title": "● المتجانسان الصغير",
+      "page": 160,
+      "type": "subentry"
+    },
+    {
+      "title": "● المتجانسان الكبير",
+      "page": 161,
+      "type": "subentry"
+    },
+    {
+      "title": "● المتجانسان المطلق",
+      "page": 161,
+      "type": "subentry"
+    },
+    {
+      "title": "المتباعدان: رابعاً",
+      "page": 161,
+      "type": "subsection"
+    },
+    {
+      "title": "● المتباعدين الصغير",
+      "page": 162,
+      "type": "subentry"
+    },
+    {
+      "title": "● المتباعدان الكبير",
+      "page": 162,
+      "type": "subentry"
+    },
+    {
+      "title": "● المتباعدان المطلق",
+      "page": 162,
+      "type": "subentry"
+    },
+    {
+      "title": "۞ المبحث الخامس عشر: الوقف والابتداء والوصل",
+      "page": 163,
+      "type": "section"
+    },
+    {
+      "title": "تمهيد",
+      "page": 164,
+      "type": "subsection"
+    },
+    {
+      "title": "الوقف وكيفيته:",
+      "page": 166,
+      "type": "subsection"
+    },
+    {
+      "title": "● الوقف الاختباري: أولاً",
+      "page": 166,
+      "type": "subentry"
+    },
+    {
+      "title": "● الوقف الاضطراري: ثانياً",
+      "page": 167,
+      "type": "subentry"
+    },
+    {
+      "title": "● الوقف الانتظاري: ثالثاً",
+      "page": 167,
+      "type": "subentry"
+    },
+    {
+      "title": "● الوقف الاختياري: رابعاً",
+      "page": 167,
+      "type": "subentry"
+    },
+    {
+      "title": "● تنبيهات مهمة تراعى عند الوقف",
+      "page": 172,
+      "type": "subentry"
+    },
+    {
+      "title": "الابتداء وكيفيته:",
+      "page": 174,
+      "type": "subsection"
+    },
+    {
+      "title": "● الابتداء بعد القطع: أولاً",
+      "page": 174,
+      "type": "subentry"
+    },
+    {
+      "title": "● الابتداء بكلمة بعد الوقف في أثناء التلاوة: ثانياً....",
+      "page": 175,
+      "type": "subentry"
+    },
+    {
+      "title": "همزة الوصل:",
+      "page": 176,
+      "type": "subsection"
+    },
+    {
+      "title": "● همزة الوصل في الحروف: أولاً",
+      "page": 177,
+      "type": "subentry"
+    },
+    {
+      "title": "● همزة الوصل في الأسماء: ثانياً",
+      "page": 177,
+      "type": "subentry"
+    },
+    {
+      "title": "● همزة الوصل في الأفعال: ثالثاً",
+      "page": 178,
+      "type": "subentry"
+    },
+    {
+      "title": "● حكم دخول همزة الاستفهام على همزة الوصل: رابعاً",
+      "page": 179,
+      "type": "subentry"
+    },
+    {
+      "title": "همزة القطع",
+      "page": 180,
+      "type": "subsection"
+    },
+    {
+      "title": "الفروق بين همزتي القطع والوصل",
+      "page": 181,
+      "type": "subsection"
+    },
+    {
+      "title": "الوصل وكيفيته:",
+      "page": 183,
+      "type": "subsection"
+    },
+    {
+      "title": "● السكت ومواضعه",
+      "page": 185,
+      "type": "subentry"
+    },
+    {
+      "title": "تنبيهات مهمة:",
+      "page": 186,
+      "type": "subsection"
+    },
+    {
+      "title": "● الحروف التي ترسم ولا تقرأ: أولاً",
+      "page": 186,
+      "type": "subentry"
+    },
+    {
+      "title": "● الحروف المحذوفة رسماً المتلفظ بها في القراءة حتماً: ثانياً",
+      "page": 186,
+      "type": "subentry"
+    },
+    {
+      "title": "۞ المبحث السادس عشر: التقاء الساكنين",
+      "page": 189,
+      "type": "section"
+    },
+    {
+      "title": "الإبقاء على الساكنين: أولاً",
+      "page": 191,
+      "type": "subsection"
+    },
+    {
+      "title": "حذف الحرف الأول من الساكنين: ثانياً",
+      "page": 191,
+      "type": "subsection"
+    },
+    {
+      "title": "تحريك الحرف الأول من الساكنين: ثالثاً",
+      "page": 192,
+      "type": "subsection"
+    },
+    {
+      "title": "۞ المبحث السابع عشر: الحذف والإثبات",
+      "page": 195,
+      "type": "section"
+    },
+    {
+      "title": "الألف المدية: أولاً",
+      "page": 197,
+      "type": "subsection"
+    },
+    {
+      "title": "الواو المدية: ثانياً",
+      "page": 198,
+      "type": "subsection"
+    },
+    {
+      "title": "الياء المدية: ثالثاً",
+      "page": 200,
+      "type": "subsection"
+    },
+    {
+      "title": "۞ المبحث الثامن عشر: هاء التأنيث",
+      "page": 206,
+      "type": "section"
+    },
+    {
+      "title": "ما رسم بالتاء المفتوحة فقط: أولاً",
+      "page": 208,
+      "type": "subsection"
+    },
+    {
+      "title": "ما رسم بالتاء المربوطة أحياناً وبالتاء المفتوحة أحياناً: ثانياً",
+      "page": 210,
+      "type": "subsection"
+    },
+    {
+      "title": "۞ المبحث التاسع عشر: المقطوع والموصول",
+      "page": 213,
+      "type": "section"
+    },
+    {
+      "title": "الكلمات المرسومة بالقطع: أولاً",
+      "page": 215,
+      "type": "subsection"
+    },
+    {
+      "title": "الكلمات المرسومة بالوصل: ثانياً",
+      "page": 216,
+      "type": "subsection"
+    },
+    {
+      "title": "الكلمات التي تقطع في بعض المواضع وتتصل في بعضها الآخر: ثالثاً",
+      "page": 219,
+      "type": "subsection"
+    },
+    {
+      "title": "۞ المبحث العشرون: مصطلحات الضبط بالمصحف الشريف",
+      "page": 223,
+      "type": "section"
+    },
+    {
+      "title": "۞ المبحث الحادي والعشرون: متن تحفة الأطفال ومتن الجزرية في التجويد",
+      "page": 230,
+      "type": "section"
+    },
+    {
+      "title": "۞ المراجع",
+      "page": 244,
+      "type": "section"
+    }
+  ],
+  "total_entries": 134,
+  "generated_by": "Book Merger",
+  "merge_info": {
+    "dlel_pages": 9,
+    "original_pages": 239,
+    "total_pages": 248
+  },
+  "source_files": [
+    "new dlel.pdf",
+    "original book"
+  ]
+}
