@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aetheria | المستكشف المقدس</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=Amiri:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#e9c349",
+                    "outline-variant": "#404943",
+                    "on-tertiary-fixed-variant": "#574500",
+                    "on-tertiary": "#3c2f00",
+                    "on-secondary-container": "#8adaab",
+                    "background": "#0f1412",
+                    "primary": "#9cd2b5",
+                    "on-error": "#690005",
+                    "on-tertiary-container": "#4e3d00",
+                    "on-secondary-fixed": "#002111",
+                    "error": "#ffb4ab",
+                    "on-surface-variant": "#c0c9c1",
+                    "on-error-container": "#ffdad6",
+                    "inverse-primary": "#356850",
+                    "tertiary-fixed": "#ffe088",
+                    "surface-container-low": "#181d1a",
+                    "surface": "#0f1412",
+                    "surface-container-lowest": "#0a0f0d",
+                    "on-primary-fixed-variant": "#1b503a",
+                    "on-primary-fixed": "#002114",
+                    "on-primary": "#003825",
+                    "surface-container-high": "#262b29",
+                    "tertiary-container": "#cba72f",
+                    "primary-fixed-dim": "#9cd2b5",
+                    "primary-container": "#06402b",
+                    "surface-tint": "#9cd2b5",
+                    "surface-variant": "#313633",
+                    "secondary-container": "#01623c",
+                    "outline": "#8a938c",
+                    "surface-dim": "#0f1412",
+                    "secondary-fixed-dim": "#87d7a8",
+                    "on-primary-container": "#77ac90",
+                    "error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#005231",
+                    "tertiary": "#e9c349",
+                    "on-background": "#dfe4e0",
+                    "on-secondary": "#003921",
+                    "secondary-fixed": "#a3f4c3",
+                    "surface-bright": "#353a38",
+                    "inverse-on-surface": "#2c322f",
+                    "surface-container-highest": "#313633",
+                    "surface-container": "#1c211e",
+                    "on-tertiary-fixed": "#241a00",
+                    "primary-fixed": "#b8efd0",
+                    "secondary": "#87d7a8",
+                    "on-surface": "#dfe4e0",
+                    "inverse-surface": "#dfe4e0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "48px",
+                    "xs": "4px",
+                    "base": "8px",
+                    "margin-desktop": "64px",
+                    "sm": "12px",
+                    "xl": "80px",
+                    "md": "24px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px"
+            },
+            "fontFamily": {
+                    "display-lg": ["IBM Plex Sans"],
+                    "label-sm": ["IBM Plex Sans"],
+                    "body-lg": ["IBM Plex Sans"],
+                    "headline-md": ["IBM Plex Sans"],
+                    "body-md": ["IBM Plex Sans"],
+                    "display-lg-mobile": ["IBM Plex Sans"],
+                    "quran": ["Amiri", "serif"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>body {
+    background-color: #0f1412;
+    overflow: hidden
+    }
+.mashrabiya-overlay {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCWicSzmXX2D5LvgjsDtwYSB78IQsj-eiylrGfQt_KnWFovbl5hODtKjX0MWKLnvsu9F5Xtt7eCLXUtlzqefJ3jcGJCQWLSGiRyv97dQGgY6iEYor_xtySsMm8tNrJt66VwiMZw54WlxF60CZSWbhRVPcgtNjU1U9M8GlppvGn154NTt54HNYrYz98TqMi5daKjjz0YG1RrlZIbvpQew4kNlG9Y-O7WW_wERIbfIKFLs_hmA24l4PLcS7hED1YGdKpJDQ71dvF735Q);
+    opacity: 0.05;
+    pointer-events: none
+    }
+.cosmic-bg {
+    background: radial-gradient(circle at 50% 50%, #06402b 0%, #0f1412 100%);
+    position: fixed;
+    inset: 0;
+    z-index: -1
+    }
+.star-field {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(1px 1px at 20px 30px, #e9c349, rgba(0, 0, 0, 0)), radial-gradient(1px 1px at 40px 70px, #fff, rgba(0, 0, 0, 0)), radial-gradient(2px 2px at 50px 160px, #9cd2b5, rgba(0, 0, 0, 0)), radial-gradient(1.5px 1.5px at 90px 40px, #e9c349, rgba(0, 0, 0, 0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    opacity: 0.2;
+    animation: drift 100s linear infinite
+    }
+@keyframes drift {
+    from {
+        transform: translateY(0);
+        } to {
+        transform: translateY(-1000px);
+        }
+    }
+.glass-pane {
+    background: rgba(49, 54, 51, 0.4);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(233, 195, 73, 0.15)
+    }
+.heatmap-indicator {
+    position: absolute;
+    right: 0;
+    width: 4px;
+    background: #e9c349;
+    box-shadow: 0 0 8px #e9c349;
+    border-radius: 2px
+    }
+::-webkit-scrollbar {
+    width: 6px
+    }
+::-webkit-scrollbar-track {
+    background: transparent
+    }
+::-webkit-scrollbar-thumb {
+    background: rgba(156, 210, 181, 0.2);
+    border-radius: 10px
+    }
+.manuscript-glow {
+    text-shadow: 0 0 10px rgba(233, 195, 73, 0.4)
+    }</style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- Ambient Background -->
+<div class="cosmic-bg">
+<div class="star-field"></div>
+<div class="mashrabiya-overlay absolute inset-0"></div>
+</div>
+<!-- Layout Container -->
+<div class="flex h-screen w-full relative">
+<!-- Sidebar Navigation (From JSON) -->
+<aside class="fixed right-0 top-0 h-full w-72 bg-surface-container dark:bg-surface-container-highest/90 backdrop-blur-2xl border-l border-outline-variant/20 shadow-2xl flex flex-col p-gutter gap-4 z-50 text-right">
+<div class="flex flex-col gap-2 mb-6">
+<h1 class="font-display-lg text-display-lg-mobile text-tertiary">أثيريا</h1>
+<p class="text-on-surface-variant text-body-md">المستكشف المقدس</p>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-4 px-4 py-3 bg-primary-container text-tertiary rounded-xl shadow-[0_0_15px_rgba(233,195,73,0.3)] border border-tertiary/20 transition-all duration-300" href="#">
+<span class="material-symbols-outlined">library_books</span>
+<span class="font-body-lg">المكتبة</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-secondary-container/30 rounded-xl transition-all duration-300 hover:scale-[1.02]" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="font-body-lg">المفضلة</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-secondary-container/30 rounded-xl transition-all duration-300 hover:scale-[1.02]" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="font-body-lg">الأخيرة</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-secondary-container/30 rounded-xl transition-all duration-300 hover:scale-[1.02]" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-body-lg">الإعدادات</span>
+</a>
+</nav>
+<button class="mt-auto bg-primary text-on-primary py-4 rounded-xl font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform shadow-lg">
+<span class="material-symbols-outlined">search</span>
+<span>البحث عن النور</span>
+</button>
+</aside>
+<!-- Main Content Area -->
+<main class="mr-72 flex flex-1 overflow-hidden">
+<!-- PDF Viewer Workspace -->
+<div class="flex-1 flex flex-col p-8 relative">
+<!-- Top Control Bar -->
+<header class="glass-pane rounded-xl p-4 mb-6 flex items-center justify-between">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">description</span>
+<span class="font-bold">المخطوطة العباسية - المجلد الرابع</span>
+</div>
+<div class="h-6 w-px bg-outline-variant/30"></div>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-surface-variant rounded-lg"><span class="material-symbols-outlined">zoom_out</span></button>
+<span class="text-sm font-mono">125%</span>
+<button class="p-2 hover:bg-surface-variant rounded-lg"><span class="material-symbols-outlined">zoom_in</span></button>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg border border-outline-variant hover:border-tertiary transition-colors text-sm" id="ocrToggle">
+<span class="material-symbols-outlined text-xs">auto_detect_voice</span>
+<span>طبقة OCR</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 bg-secondary-container/50 text-secondary rounded-lg text-sm font-bold">
+<span class="material-symbols-outlined text-xs">format_quote</span>
+<span>مدير الاقتباسات</span>
+</button>
+<button class="p-2 bg-tertiary text-on-tertiary rounded-lg"><span class="material-symbols-outlined">share</span></button>
+</div>
+</header>
+<!-- Floating Glassmorphism PDF Window -->
+<div class="flex-1 glass-pane rounded-2xl relative overflow-hidden flex shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+<!-- Page Heatmap Scrollbar -->
+<div class="w-1.5 h-full bg-surface-container-low relative cursor-pointer" id="heatmapContainer">
+<div class="heatmap-indicator" style="top: 15%; height: 2px;"></div>
+<div class="heatmap-indicator" style="top: 16.5%; height: 2px;"></div>
+<div class="heatmap-indicator" style="top: 42%; height: 6px;"></div>
+<div class="heatmap-indicator" style="top: 88%; height: 2px;"></div>
+</div>
+<!-- PDF Content Canvas -->
+<div class="flex-1 overflow-y-auto p-12 scroll-smooth" id="pdfCanvas">
+<div class="max-w-3xl mx-auto bg-[#f8f5ed] dark:bg-emerald-950/20 p-16 rounded-sm shadow-inner min-h-[1400px] border border-tertiary/10 relative group">
+<!-- Geometric Border Frame -->
+<div class="absolute inset-4 border border-tertiary/30 pointer-events-none opacity-50"></div>
+<!-- Manuscript Content -->
+<div class="relative z-10 text-right font-quran leading-loose space-y-12">
+<div class="text-center mb-20">
+<h2 class="text-4xl text-tertiary font-bold mb-4 manuscript-glow">بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ</h2>
+<div class="w-24 h-px bg-gradient-to-r from-transparent via-tertiary to-transparent mx-auto"></div>
+</div>
+<p class="text-3xl text-on-surface leading-[3rem]">
+                                    الْحَمْدُ لِلَّـهِ رَبِّ الْعَالَمِينَ الرَّحْمَـٰنِ الرَّحِيمِ مَالِكِ يَوْمِ الدِّينِ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ
+                                </p>
+<div class="relative py-8 px-12 border-r-4 border-tertiary bg-tertiary/5 rounded-l-lg">
+<p class="text-2xl text-on-surface-variant italic">
+                                        "إِنَّ هَـٰذَا الْقُرْآنَ يَهْدِي لِلَّتِي هِيَ أَقْوَمُ وَيُبَشِّرُ الْمُؤْمِنِينَ الَّذِينَ يَعْمَلُونَ الصَّالِحَاتِ أَنَّ لَهُمْ أَجْرًا كَبِيرًا"
+                                    </p>
+<span class="absolute -right-3 top-1/2 -translate-y-1/2 bg-tertiary text-on-tertiary w-6 h-6 flex items-center justify-center rounded-full text-[10px]">١</span>
+</div>
+<p class="text-3xl text-on-surface leading-[3rem]">
+                                    وَإِذَا قَرَأْتَ الْقُرْآنَ جَعَلْنَا بَيْنَكَ وَبَيْنَ الَّذِينَ لَا يُؤْمِنُونَ بِالْآخِرَةِ حِجَابًا مَّسْتُورًا وَجَعَلْنَا عَلَىٰ قُلُوبِهِمْ أَكِنَّةً أَن يَفْقَهُوهُ وَفِي آذَانِهِمْ وَقْرًا 
+                                    <span class="bg-tertiary/20 border-b-2 border-tertiary px-1 text-tertiary cursor-pointer hover:bg-tertiary/40 transition-colors">وَإِذَا ذَكَرْتَ رَبَّكَ فِي الْقُرْآنِ وَحْدَهُ</span> 
+                                    وَلَّوْا عَلَىٰ أَدْبَارِهِمْ نُفُورًا.
+                                </p>
+</div>
+<!-- OCR Transparent Layer (Hidden by default) -->
+<div class="absolute inset-0 z-20 pointer-events-none opacity-0 transition-opacity duration-500 bg-black/40 backdrop-blur-[2px]" id="ocrLayer">
+<div class="absolute top-[340px] right-[100px] px-2 bg-primary/20 border border-primary text-[10px] text-primary">SELECTABLE_TEXT_BLOCK_01</div>
+<div class="absolute top-[620px] right-[140px] px-2 bg-primary/20 border border-primary text-[10px] text-primary">SELECTABLE_TEXT_BLOCK_02</div>
+</div>
+</div>
+</div>
+<!-- Left: Page Metadata Viewer (JSON) -->
+<div class="w-64 bg-surface-container-high/50 border-r border-outline-variant/20 p-4 font-mono text-[11px] overflow-hidden flex flex-col">
+<div class="text-tertiary border-b border-outline-variant/30 pb-2 mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">data_object</span>
+                            بيانات الصفحة
+                        </div>
+<div class="flex-1 overflow-y-auto opacity-70">
+<pre class="text-primary-fixed-dim">{
+  "page": 402,
+  "dimensions": [210, 297],
+  "entities": [
+    {
+      "id": "ref_001",
+      "type": "verse",
+      "coords": [45, 12, 88, 110],
+      "highlight": "gold_leaf"
+    },
+    {
+      "id": "ann_042",
+      "type": "marginalia",
+      "origin": "Kufic",
+      "conf": 0.982
+    }
+  ],
+  "ocr_engine": "Aetheria-DeepSight-v4",
+  "status": "verified"
+}
+</pre>
+</div>
+</div>
+</div>
+</div>
+<!-- Advanced Search Sidebar -->
+<div class="w-80 border-r border-outline-variant/20 bg-surface-container-low/50 backdrop-blur-md p-6 flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<h3 class="font-bold text-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">search_insights</span>
+                        بحث متقدم
+                    </h3>
+<button class="text-xs text-on-surface-variant hover:text-tertiary">مسح</button>
+</div>
+<div class="space-y-4">
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border border-outline-variant rounded-xl px-4 py-3 focus:border-tertiary focus:ring-1 focus:ring-tertiary outline-none transition-all" placeholder="ابحث في المتن..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-3 text-on-surface-variant">search</span>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-xs text-on-surface-variant px-1">نوع البحث</label>
+<div class="grid grid-cols-1 gap-2">
+<label class="flex items-center gap-3 p-3 rounded-lg border border-outline-variant/30 bg-surface-container hover:bg-surface-variant transition-colors cursor-pointer group">
+<input checked="" class="text-tertiary focus:ring-tertiary bg-transparent" name="stype" type="radio"/>
+<span class="text-sm">مطابق (Exact)</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg border border-outline-variant/30 bg-surface-container hover:bg-surface-variant transition-colors cursor-pointer group">
+<input class="text-tertiary focus:ring-tertiary bg-transparent" name="stype" type="radio"/>
+<span class="text-sm">جذري (Root-word)</span>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg border border-outline-variant/30 bg-surface-container hover:bg-surface-variant transition-colors cursor-pointer group">
+<input class="text-tertiary focus:ring-tertiary bg-transparent" name="stype" type="radio"/>
+<span class="text-sm">تقريبي (Fuzzy)</span>
+</label>
+</div>
+</div>
+<div class="pt-4 border-t border-outline-variant/20">
+<label class="text-xs text-on-surface-variant block mb-3">نتائج التحليل البصري</label>
+<div class="space-y-3">
+<div class="p-3 bg-secondary-container/10 border-r-2 border-secondary rounded-lg">
+<p class="text-xs font-bold text-secondary mb-1">الصفحة 402 - سطر 12</p>
+<p class="text-xs text-on-surface-variant truncate">"...وَإِذَا ذَكَرْتَ رَبَّكَ فِي الْقُرْآنِ وَحْدَهُ..."</p>
+</div>
+<div class="p-3 bg-surface-container border-r-2 border-outline-variant rounded-lg opacity-60">
+<p class="text-xs font-bold mb-1">الصفحة 415 - سطر 4</p>
+<p class="text-xs text-on-surface-variant truncate">"...لَقَدْ ذَكَرْنَا لَكُمْ فِيهِ..."</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-auto">
+<div class="bg-tertiary/10 p-4 rounded-xl border border-tertiary/20">
+<p class="text-xs text-tertiary-fixed-dim flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+                            اقتراح الذكاء الاصطناعي
+                        </p>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                            تم العثور على تشابه بنسبة 94% مع جذور النصوص في "المخطوطة القيروانية". هل تود المقارنة؟
+                        </p>
+<button class="w-full mt-3 py-2 text-[10px] uppercase font-bold tracking-widest bg-tertiary/20 text-tertiary border border-tertiary/30 rounded-lg hover:bg-tertiary/30 transition-colors">تحليل المخطوطات المقابلة</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- UI Interaction Scripts -->
+<script>
+        const ocrToggle = document.getElementById('ocrToggle');
+        const ocrLayer = document.getElementById('ocrLayer');
+        let ocrActive = false;
+
+        ocrToggle.addEventListener('click', () => {
+            ocrActive = !ocrActive;
+            ocrLayer.style.opacity = ocrActive ? '1' : '0';
+            ocrLayer.style.pointerEvents = ocrActive ? 'auto' : 'none';
+            ocrToggle.classList.toggle('bg-tertiary', ocrActive);
+            ocrToggle.classList.toggle('text-on-tertiary', ocrActive);
+            ocrToggle.classList.toggle('border-tertiary', ocrActive);
+        });
+
+        // Heatmap navigation simulation
+        const heatmapContainer = document.getElementById('heatmapContainer');
+        const pdfCanvas = document.getElementById('pdfCanvas');
+
+        heatmapContainer.addEventListener('click', (e) => {
+            const rect = heatmapContainer.getBoundingClientRect();
+            const y = e.clientY - rect.top;
+            const percentage = y / rect.height;
+            pdfCanvas.scrollTo({
+                top: pdfCanvas.scrollHeight * percentage,
+                behavior: 'smooth'
+            });
+        });
+
+        // Atmospheric star movement
+        document.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+            document.querySelector('.star-field').style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+    </script>
+</body></html>

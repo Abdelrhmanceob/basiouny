@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>منصة ملفات القرآن | العارض</title>
+  <title>مكتبة النور الرقمية | العارض</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 <body class="rtl dark viewer-mode">
   <header class="topbar">
     <div class="container topbar-inner">
-      <a class="brand" href="index.html"><span class="brand-badge">Q</span><span>أرشيف القرآن</span></a>
+      <a class="brand" href="index.html"><span class="brand-badge">ن</span><span>مكتبة النور الرقمية</span></a>
       <button class="icon-btn mobile-toggle" data-mobile-toggle aria-label="تبديل قائمة التنقل">☰</button>
       <nav class="nav-links" data-nav-links>
         <a class="nav-link" href="index.html">الرئيسية</a>
@@ -35,13 +35,10 @@
     <section class="cinematic-viewer" data-cinematic-root>
       <aside class="cinematic-sidebar" data-sidebar>
         <div class="sidebar-head">
-          <h2>فهرس المستند</h2>
+          <h2>كل صفحات PDF</h2>
           <button class="icon-btn" data-sidebar-toggle aria-label="طي القائمة">⟨</button>
         </div>
-        <div class="viewer-search-wrap">
-          <input type="search" class="search-input" data-index-search placeholder="ابحث داخل الفهرس..." aria-label="بحث الفهرس">
-        </div>
-        <div class="index-caption">الفهرس الداخلي للمستند</div>
+        <div class="index-caption">عرض جميع الصفحات بالتسلسل</div>
         <div class="index-list" data-index-list aria-live="polite"></div>
       </aside>
 
@@ -64,18 +61,54 @@
           </div>
         </div>
 
+        <div class="quick-nav-panel" data-quick-nav-panel hidden>
+          <div class="quick-nav-head">
+            <strong>تنقل وبحث سريع</strong>
+            <button class="icon-btn" type="button" data-quick-nav-close aria-label="إغلاق">✕</button>
+          </div>
+          <div class="quick-nav-body">
+            <label class="quick-label" for="quick-page-input">الانتقال إلى صفحة</label>
+            <div class="quick-row">
+              <input id="quick-page-input" type="number" min="1" value="1" data-quick-page-input aria-label="رقم الصفحة">
+              <button class="btn primary" type="button" data-quick-page-go>اذهب</button>
+            </div>
+
+            <label class="quick-label" for="keyword-input">بحث بالكلمات الدلالية</label>
+            <div class="quick-row">
+              <input id="keyword-input" type="search" data-keyword-input placeholder="مثال: صفحة 50 أو جملة من النص..." aria-label="بحث داخل صفحات PDF">
+              <button class="btn" type="button" data-keyword-search>بحث</button>
+            </div>
+
+            <div class="quick-results" data-keyword-results aria-live="polite">
+              <div class="empty">اكتب كلمة للبحث داخل صفحات الكتاب.</div>
+            </div>
+          </div>
+        </div>
+
         <div class="cinematic-stage" data-stage>
+          <button class="icon-btn top-download-btn" data-download-top aria-label="تحميل الملف" title="تحميل الملف">⬇</button>
           <div class="pattern-overlay" aria-hidden="true"></div>
           <div class="page-glow" aria-hidden="true"></div>
           <div class="canvas-frame" data-canvas-frame>
             <canvas data-pdf-canvas></canvas>
           </div>
-          <div class="section-flash" data-section-flash></div>
+          <div class="section-flash" data-section-flash lang="ar" dir="rtl" aria-live="polite" aria-label="إشعار التنقل"></div>
+        </div>
+
+        <div class="page-search-dock">
+          <div class="viewer-search-wrap viewer-search-wrap-primary">
+            <input type="search" class="search-input" data-index-search placeholder="اكتب رقم صفحة أو جملة كاملة للبحث..." aria-label="بحث أساسي في الكتاب">
+            <button class="btn primary" type="button" data-primary-search-btn>⌕ بحث</button>
+          </div>
+          <div class="page-search-results" data-primary-search-results aria-live="polite">
+            <div class="empty">اكتب كلمة دلالية أو رقم صفحة ثم اضغط بحث.</div>
+          </div>
         </div>
 
         <div class="floating-controls" data-float-controls>
           <button class="icon-btn" data-prev-page aria-label="الصفحة السابقة" title="الصفحة السابقة">⟨</button>
           <button class="icon-btn" data-next-page aria-label="الصفحة التالية" title="الصفحة التالية">⟩</button>
+          <button class="icon-btn" data-quick-nav-toggle aria-label="بحث وتنقل سريع" title="بحث وتنقل سريع">⌕</button>
           <button class="icon-btn" data-zoom-out aria-label="تصغير" title="تصغير">－</button>
           <button class="icon-btn" data-zoom-in aria-label="تكبير" title="تكبير">＋</button>
           <button class="icon-btn" data-download-pdf aria-label="تحميل الملف" title="تحميل الملف">⬇</button>
@@ -85,10 +118,10 @@
     </section>
   </main>
 
-  <footer class="footer"><div class="container footer-inner"><div class="stack"><strong>أرشيف القرآن</strong><p class="muted">تجربة قراءة سينمائية مع تنقل ذكي للفهرس والنتائج.</p></div><nav class="footer-links"><a href="index.html">الرئيسية</a><a href="library.html">المكتبة</a><a href="viewer.html">العارض</a><a href="categories.html">التصنيفات</a><a href="search.html">البحث</a><a href="dashboard.html">لوحة التحكم</a><a href="about.html">من نحن</a><a href="contact.html">تواصل معنا</a></nav></div></footer>
+  <footer class="footer"><div class="container footer-inner"><div class="stack"><strong>مكتبة النور الرقمية</strong><p class="muted">تجربة قراءة سينمائية للكتب الإسلامية مع تنقل ذكي.</p></div><nav class="footer-links"><a href="index.html">الرئيسية</a><a href="library.html">المكتبة</a><a href="viewer.html">العارض</a><a href="categories.html">التصنيفات</a><a href="search.html">البحث</a><a href="dashboard.html">لوحة التحكم</a><a href="about.html">من نحن</a><a href="contact.html">تواصل معنا</a></nav></div><div class="container" style="padding: 0 0 1.2rem; text-align:center;"><p class="muted">حقوق الملكية ترجع إلى الدكتورة نجوى علوان</p></div></footer>
 
-  <script src="assets/js/platform.js?v=20260422-1"></script>
+  <script src="assets/js/platform.js?v=20260422-2"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.js"></script>
-  <script src="assets/js/viewer.js?v=20260422-1"></script>
+  <script src="assets/js/viewer.js?v=20260523-21"></script>
 </body>
 </html>

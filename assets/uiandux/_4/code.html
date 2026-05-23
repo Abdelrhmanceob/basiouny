@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        :root {
+            --mashrabiya-pattern: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 15-15 15-15-15zM0 30l15 15-15 15-15-15zM60 30l15 15-15 15-15-15zM30 60l15 15-15 15-15-15z' fill='%239cd2b5' fill-opacity='0.05'/%3E%3C/svg%3E");
+        }
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            background-image: var(--mashrabiya-pattern);
+            background-attachment: fixed;
+        }
+        .glass-card {
+            background: rgba(6, 64, 43, 0.6);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(233, 195, 73, 0.3);
+            border-left: 1px solid rgba(233, 195, 73, 0.1);
+        }
+        .golden-glow {
+            box-shadow: 0 0 20px rgba(233, 195, 73, 0.15);
+        }
+        .golden-glow-active {
+            box-shadow: 0 0 25px rgba(233, 195, 73, 0.4);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#005231",
+                        "tertiary-container": "#cba72f",
+                        "on-primary-fixed-variant": "#1b503a",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "inverse-surface": "#dfe4e0",
+                        "surface": "#0f1412",
+                        "primary-container": "#06402b",
+                        "outline": "#8a938c",
+                        "on-background": "#dfe4e0",
+                        "secondary-container": "#01623c",
+                        "on-error": "#690005",
+                        "error-container": "#93000a",
+                        "on-tertiary-container": "#4e3d00",
+                        "on-surface": "#dfe4e0",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-highest": "#313633",
+                        "surface-container-high": "#262b29",
+                        "background": "#0f1412",
+                        "tertiary-fixed": "#ffe088",
+                        "surface-variant": "#313633",
+                        "secondary-fixed-dim": "#87d7a8",
+                        "surface-tint": "#9cd2b5",
+                        "primary": "#9cd2b5",
+                        "error": "#ffb4ab",
+                        "inverse-on-surface": "#2c322f",
+                        "primary-fixed": "#b8efd0",
+                        "on-primary-fixed": "#002114",
+                        "on-secondary-container": "#8adaab",
+                        "on-secondary-fixed": "#002111",
+                        "outline-variant": "#404943",
+                        "on-tertiary": "#3c2f00",
+                        "on-surface-variant": "#c0c9c1",
+                        "on-primary": "#003825",
+                        "surface-container": "#1c211e",
+                        "secondary-fixed": "#a3f4c3",
+                        "surface-container-lowest": "#0a0f0d",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "tertiary": "#e9c349",
+                        "inverse-primary": "#356850",
+                        "on-primary-container": "#77ac90",
+                        "secondary": "#87d7a8",
+                        "surface-container-low": "#181d1a",
+                        "primary-fixed-dim": "#9cd2b5",
+                        "on-tertiary-fixed": "#241a00",
+                        "surface-bright": "#353a38",
+                        "on-secondary": "#003921",
+                        "surface-dim": "#0f1412"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "lg": "48px",
+                        "margin-desktop": "64px",
+                        "sm": "12px",
+                        "md": "24px",
+                        "xl": "80px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["IBM Plex Sans"],
+                        "headline-md": ["IBM Plex Sans"],
+                        "body-lg": ["IBM Plex Sans"],
+                        "body-md": ["IBM Plex Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_0_15px_rgba(156,210,181,0.1)] w-full top-0 sticky flex justify-between items-center px-6 py-4 z-40">
+<div class="flex items-center gap-4">
+<h1 class="font-display-lg text-display-lg text-primary dark:text-primary">أثيريا</h1>
+</div>
+<div class="hidden md:flex flex-1 max-w-md mx-8">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container border-none focus:ring-1 focus:ring-tertiary rounded-full py-2 pr-10 pl-4 text-body-md" placeholder="ابحث في الخزانة..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary text-2xl hover:text-tertiary transition-colors">notifications</button>
+<div class="w-10 h-10 rounded-full border-2 border-tertiary/30 overflow-hidden">
+<img alt="User Profile Avatar" class="w-full h-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyRZ2H9yC1gXDz6mrf5bqA4Ij38DCyv7yF1gKDUyx7gBTZa_cFENZnw-25-qI7xWV90Z3HXhK4uir3JEuAxgu6e8NkBvH4fiv6RDBS9bgIrY7bITHhTqbJ-rDqOg1xI73qv0fiqJzhljQZIswy03B9J96UWzT8ORQp0aLhsKiIJbTfzBsxMeW3bpgh0_kns9jxLn-pXFRiSnol3eLk3K-qySQ6o_4ZWJSyjmoPVTtsXmpiXOlXq_ZH1VmRg94e9KNNRcZO6kTDQcU"/>
+</div>
+</div>
+</header>
+<div class="flex">
+<!-- SideNavBar -->
+<aside class="fixed right-0 top-0 h-full w-72 bg-surface-container dark:bg-surface-container-highest/90 backdrop-blur-2xl border-l border-outline-variant/20 shadow-2xl flex flex-col p-gutter gap-4 z-50 text-right hidden lg:flex mt-20">
+<div class="mb-8">
+<h2 class="font-display-lg text-display-lg-mobile text-tertiary">أثيريا</h2>
+<p class="font-body-lg text-on-surface-variant text-sm">المستكشف المقدس</p>
+</div>
+<nav class="space-y-2">
+<a class="flex items-center gap-4 p-4 bg-primary-container text-tertiary rounded-xl shadow-[0_0_15px_rgba(233,195,73,0.3)] border border-tertiary/20 font-body-lg" href="#">
+<span class="material-symbols-outlined">library_books</span>
+<span>المكتبة</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-surface-variant hover:bg-secondary-container/30 rounded-xl transition-all hover:scale-[1.02] font-body-lg" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span>المفضلة</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-surface-variant hover:bg-secondary-container/30 rounded-xl transition-all hover:scale-[1.02] font-body-lg" href="#">
+<span class="material-symbols-outlined">history</span>
+<span>الأخيرة</span>
+</a>
+<a class="flex items-center gap-4 p-4 text-on-surface-variant hover:bg-secondary-container/30 rounded-xl transition-all hover:scale-[1.02] font-body-lg" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>الإعدادات</span>
+</a>
+</nav>
+<button class="mt-auto bg-primary text-on-primary font-bold py-3 px-6 rounded-xl border border-tertiary/50 hover:golden-glow-active transition-all active:scale-95">
+                البحث عن النور
+            </button>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 lg:mr-72 p-6 md:p-10 space-y-12">
+<!-- Section: Currently Reading (Bento Style Hero) -->
+<section class="max-w-6xl mx-auto">
+<div class="flex items-center justify-between mb-6">
+<h2 class="font-headline-md text-headline-md text-primary flex items-center gap-2">
+<span class="material-symbols-outlined">auto_stories</span>
+                        قيد القراءة حالياً
+                    </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 glass-card rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-center relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-l from-primary/5 to-transparent pointer-events-none"></div>
+<div class="w-40 h-56 flex-shrink-0 bg-primary-container rounded-lg shadow-2xl relative overflow-hidden golden-glow border border-tertiary/20">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700" data-alt="A luxurious, leather-bound ancient Quran manuscript with intricate gold leaf geometric patterns and emerald green accents, resting on a velvet cushion in a soft-lit sanctuary. The lighting is warm and ethereal, highlighting the texture of the aged paper and the brilliance of the metallic calligraphy. High-end cinematic style with deep bokeh background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAxpq7Z_kAFXtHui-KyKR27C95SE2K7mbuJMMXzKVXDA56ybyy0SaNu970rCcdhvB-ERaZCojIZwntQdQtrgjvl2IyItZoX5rYo7YYUpOj7pjkDztnEPI7S-8JMkaAmeEA-AUARo8OewV_TpzfyRYQKA7VFtN-zEJLJO-gSLyHUxS_ps74bX2uWek0I1PBB5sEd0lgPa5pNE2OHm2H2cJWfOVga4Sdvnjl7HCFi2ftHfbIbedPwRtlvw27iNynGFZyDlTVWWLr99s"/>
+<div class="absolute inset-0 bg-black/20"></div>
+</div>
+<div class="flex-1 text-center md:text-right space-y-4">
+<div>
+<span class="bg-tertiary/10 text-tertiary px-3 py-1 rounded-full text-xs font-bold border border-tertiary/20">الجزء الثلاثون</span>
+<h3 class="font-display-lg text-display-lg-mobile md:text-headline-md mt-2 text-on-primary-container">القرآن الكريم</h3>
+<p class="text-on-surface-variant font-body-md">سورة النبأ - الآية 12</p>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between text-sm font-bold text-tertiary">
+<span>78% مكتمل</span>
+<span>604 صفحة</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-tertiary w-[78%] rounded-full shadow-[0_0_10px_rgba(233,195,73,0.5)]"></div>
+</div>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold hover:golden-glow transition-all active:scale-95">
+                                متابعة القراءة
+                            </button>
+</div>
+</div>
+<div class="md:col-span-4 glass-card rounded-3xl p-6 flex flex-col justify-center items-center text-center space-y-4 border border-tertiary/10">
+<div class="w-16 h-16 rounded-full bg-tertiary/20 flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-tertiary text-3xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<h4 class="font-headline-md text-primary">وردك اليومي</h4>
+<p class="text-on-surface-variant text-sm">لقد أتممت قراءة 5 صفحات اليوم. بقي لك 3 صفحات لتحقيق هدفك.</p>
+<div class="flex -space-x-2 space-x-reverse">
+<div class="w-8 h-8 rounded-full bg-tertiary border-2 border-surface"></div>
+<div class="w-8 h-8 rounded-full bg-primary border-2 border-surface"></div>
+<div class="w-8 h-8 rounded-full bg-secondary border-2 border-surface"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Categories (Horizontal Scroll) -->
+<section class="max-w-6xl mx-auto overflow-hidden">
+<div class="flex items-center justify-between mb-6">
+<h2 class="font-headline-md text-headline-md text-primary">التصنيفات العلمية</h2>
+<a class="text-tertiary hover:underline font-body-md" href="#">عرض الكل</a>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-4 scrollbar-hide">
+<!-- Category Card 1 -->
+<div class="flex-shrink-0 w-48 h-64 glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center group cursor-pointer hover:border-tertiary transition-all">
+<div class="w-16 h-16 rounded-2xl bg-secondary-container/40 flex items-center justify-center mb-4 group-hover:golden-glow transition-all">
+<span class="material-symbols-outlined text-secondary text-4xl">menu_book</span>
+</div>
+<h3 class="font-body-lg font-bold text-on-surface">المصاحف</h3>
+<p class="text-xs text-on-surface-variant mt-2">12 نسخة نادرة</p>
+</div>
+<!-- Category Card 2 -->
+<div class="flex-shrink-0 w-48 h-64 glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center group cursor-pointer hover:border-tertiary transition-all">
+<div class="w-16 h-16 rounded-2xl bg-primary-container/40 flex items-center justify-center mb-4 group-hover:golden-glow transition-all">
+<span class="material-symbols-outlined text-primary text-4xl">local_library</span>
+</div>
+<h3 class="font-body-lg font-bold text-on-surface">التفاسير</h3>
+<p class="text-xs text-on-surface-variant mt-2">45 مرجع علمي</p>
+</div>
+<!-- Category Card 3 -->
+<div class="flex-shrink-0 w-48 h-64 glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center group cursor-pointer hover:border-tertiary transition-all">
+<div class="w-16 h-16 rounded-2xl bg-tertiary-container/20 flex items-center justify-center mb-4 group-hover:golden-glow transition-all">
+<span class="material-symbols-outlined text-tertiary text-4xl">history_edu</span>
+</div>
+<h3 class="font-body-lg font-bold text-on-surface">الأحاديث النبوية</h3>
+<p class="text-xs text-on-surface-variant mt-2">الصحاح والسنن</p>
+</div>
+<!-- Category Card 4 -->
+<div class="flex-shrink-0 w-48 h-64 glass-card rounded-2xl p-6 flex flex-col items-center justify-center text-center group cursor-pointer hover:border-tertiary transition-all">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-highest flex items-center justify-center mb-4 group-hover:golden-glow transition-all">
+<span class="material-symbols-outlined text-on-surface-variant text-4xl">mosque</span>
+</div>
+<h3 class="font-body-lg font-bold text-on-surface">الفقه والسيرة</h3>
+<p class="text-xs text-on-surface-variant mt-2">سيرة عطرة</p>
+</div>
+</div>
+</section>
+<!-- Section: Favorites (Asymmetric Grid) -->
+<section class="max-w-6xl mx-auto">
+<div class="flex items-center justify-between mb-6">
+<h2 class="font-headline-md text-headline-md text-primary">المفضلة</h2>
+<div class="flex gap-2">
+<button class="p-2 glass-card rounded-lg material-symbols-outlined text-tertiary">grid_view</button>
+<button class="p-2 bg-surface-container rounded-lg material-symbols-outlined text-on-surface-variant">list</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Favorite Item 1 -->
+<div class="glass-card rounded-2xl overflow-hidden group">
+<div class="h-40 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of a page from an antique Islamic manuscript featuring bold Thuluth calligraphy in black ink with gold and blue decorative borders. The paper is aged parchment with a warm sepia tone. The focus is sharp on the central words while the edges blur into a soft architectural background. Moody lighting with a focal golden glow on the script." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9PdOfwHyIEsVTI2AyXcjTU6_G20__u2rog8uSW64S7qjhapY3JQ0tFFOuJ-uHKRVIO25ER0h6Rb4Ide218K1qmHLmvvmH8TelIJZwCO3HoWnPp80Ao0QubdwaAYhO6iK1E6-zaKyUoeShmhZiAVN-sQ8v3XmHJCjBQIXETdP28Dhcr-TsY4ZpZNrYrIAX8u5GgNQYRsbs3bLUyrtDJLeGhFB5xemqVVl8GOVq0yOXGfLxROOoqsZBJKdbfPd3vHkJozveu2VTCvo"/>
+<button class="absolute top-4 left-4 w-10 h-10 rounded-full bg-surface/60 backdrop-blur-md flex items-center justify-center text-error material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</button>
+</div>
+<div class="p-5 space-y-2">
+<h4 class="font-bold text-lg text-on-surface">صحيح البخاري - المجلد الأول</h4>
+<p class="text-sm text-on-surface-variant">كتاب بدء الوحي</p>
+<div class="pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="text-xs text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+                                    حُفظ منذ 3 أيام
+                                </span>
+<button class="text-primary hover:text-tertiary font-bold text-sm">فتح الكتاب</button>
+</div>
+</div>
+</div>
+<!-- Favorite Item 2 -->
+<div class="glass-card rounded-2xl overflow-hidden group">
+<div class="h-40 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A grand Islamic library with soaring arched ceilings, bookshelves carved from dark wood filled with emerald and gold bound books. Soft dust motes dance in shafts of golden light coming from high windows. The atmosphere is serene, sacred, and scholarly. Elegant and high-end photographic style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU-o9rXeYQXxv64_HIUvqdi7cuPo3L6yV2Ti_5EKt8PWfRo-n2rgjrdtWHZTFg0znxHc4fvXHIu04289WuOr5v7_vA1HCkoy8rfLqpsWgL-yo7pzfqpGxGH2rHNr2o67O5xmvHGxv9Eze5yH-_zH6-XwjgYr4DWyoVQrdVpn-SF00X-pUdnxIRCvhbdoOmdBCHDQdqBB_O6v5s57q13WNXQsRZuddAAzDHEjupjWa_QC11d3wkXNPTHaD3u3wbpcfO7Aih0B-YoBo"/>
+<button class="absolute top-4 left-4 w-10 h-10 rounded-full bg-surface/60 backdrop-blur-md flex items-center justify-center text-error material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</button>
+</div>
+<div class="p-5 space-y-2">
+<h4 class="font-bold text-lg text-on-surface">تفسير ابن كثير</h4>
+<p class="text-sm text-on-surface-variant">تحقيق الشيخ أحمد شاكر</p>
+<div class="pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="text-xs text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+                                    حُفظ الأسبوع الماضي
+                                </span>
+<button class="text-primary hover:text-tertiary font-bold text-sm">فتح الكتاب</button>
+</div>
+</div>
+</div>
+<!-- Favorite Item 3 -->
+<div class="glass-card rounded-2xl overflow-hidden group">
+<div class="h-40 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Abstract geometric patterns inspired by Islamic mosaic tilework, using a palette of royal green, metallic gold, and deep turquoise. The patterns are layered with glassmorphic transparency and subtle 3D depth. The lighting is soft and ambient, creating a feeling of infinite enlightenment and mathematical perfection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzk1SIGPQhE3pxvqkqAsFgnXQAfSn3sVfvNLs9kDA5AiDn0nCOcDeal2nYVi7E307SbdvNJH7wGbXDG-GkXmaBWMICJzU83rQBj4EcAl2--6iQHBCCWPDjSDE5_obEiJvkzbQz9ChyMRyKRpkukDhQOH00nsVgNyEKN9Q5DD0LLpFhXniHMCEgtlFkEK2tP7BKnw2OnYfq-tEQi6ahcJn20Ss7eumA2OCN09NLwgNDI222ij6dH9ky0keozNybpsypVwRn9Y3moJQ"/>
+<button class="absolute top-4 left-4 w-10 h-10 rounded-full bg-surface/60 backdrop-blur-md flex items-center justify-center text-error material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</button>
+</div>
+<div class="p-5 space-y-2">
+<h4 class="font-bold text-lg text-on-surface">الرحيق المختوم</h4>
+<p class="text-sm text-on-surface-variant">بحث في السيرة النبوية</p>
+<div class="pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="text-xs text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+                                    حُفظ اليوم
+                                </span>
+<button class="text-primary hover:text-tertiary font-bold text-sm">فتح الكتاب</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<!-- Floating Action Button (FAB) -->
+<button class="fixed bottom-8 left-8 w-16 h-16 bg-tertiary text-on-tertiary rounded-full shadow-2xl golden-glow hover:golden-glow-active flex items-center justify-center transition-all active:scale-90 z-50">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+<!-- Mobile Bottom Navigation -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-surface-container-high/90 backdrop-blur-xl border-t border-outline-variant/20 flex justify-around p-4 z-50">
+<button class="flex flex-col items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">library_books</span>
+<span class="text-[10px] font-bold">المكتبة</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="text-[10px]">المفضلة</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">history</span>
+<span class="text-[10px]">الأخيرة</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[10px]">الإعدادات</span>
+</button>
+</nav>
+<script>
+        // Micro-interactions and atmospheric effects
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+                
+                // Dynamic border glow effect
+                const xPerc = (x / rect.width) * 100;
+                const yPerc = (y / rect.height) * 100;
+                card.style.borderImageSource = `radial-gradient(circle at ${xPerc}% ${yPerc}%, rgba(233,195,73,0.4) 0%, transparent 80%)`;
+            });
+        });
+
+        // Simple scroll behavior for header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-xl');
+                header.classList.replace('bg-surface/80', 'bg-surface/95');
+            } else {
+                header.classList.remove('shadow-xl');
+                header.classList.replace('bg-surface/95', 'bg-surface/80');
+            }
+        });
+    </script>
+</body></html>

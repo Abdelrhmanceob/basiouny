@@ -14,29 +14,46 @@ const controls = document.querySelector('[data-float-controls]');
 const pageInput = document.querySelector('[data-page-input]');
 const pageGoBtn = document.querySelector('[data-page-go]');
 const pageTotal = document.querySelector('[data-page-total]');
+const quickNavToggle = document.querySelector('[data-quick-nav-toggle]');
+const quickNavPanel = document.querySelector('[data-quick-nav-panel]');
+const quickNavClose = document.querySelector('[data-quick-nav-close]');
+const quickPageInput = document.querySelector('[data-quick-page-input]');
+const quickPageGo = document.querySelector('[data-quick-page-go]');
+const keywordInput = document.querySelector('[data-keyword-input]');
+const keywordSearchBtn = document.querySelector('[data-keyword-search]');
+const keywordResults = document.querySelector('[data-keyword-results]');
+const primarySearchBtn = document.querySelector('[data-primary-search-btn]');
+const primarySearchResults = document.querySelector('[data-primary-search-results]');
 
 const prevBtn = document.querySelector('[data-prev-page]');
 const nextBtn = document.querySelector('[data-next-page]');
 const zoomInBtn = document.querySelector('[data-zoom-in]');
 const zoomOutBtn = document.querySelector('[data-zoom-out]');
 const downloadBtn = document.querySelector('[data-download-pdf]');
+const topDownloadBtn = document.querySelector('[data-download-top]');
 const fullscreenBtn = document.querySelector('[data-fullscreen]');
 
 const PDF_PATH = 'assets/quran1.pdf';
+const DOWNLOAD_PATH = PDF_PATH;
+const FORCE_IMAGE_VIEW = true;
 const INDEX_START = 2;
 const INDEX_END = 9;
 
 let pdfDoc = null;
 let renderTask = null;
 let currentPage = Number(new URLSearchParams(window.location.search).get('page') || 1);
-let totalPages = 604;
+let totalPages = 241;
 let zoom = 1;
 let indexEntries = [];
-let filteredEntries = [];
+let pageListEntries = [];
+let filteredPageListEntries = [];
 let activeSection = null;
 let controlsTimer = null;
 let fallbackMode = false;
-let fallbackIframe = null;
+let fallbackPagesStack = null;
+let fallbackObserver = null;
+let fallbackSyncLocked = false;
+let fallbackPages = [];
 let resizeTimer = null;
 let navScaleTimer = null;
 let pendingPostRenderScale = false;
@@ -49,6 +66,10 @@ let panStartX = 0;
 let panStartY = 0;
 let panScrollLeft = 0;
 let panScrollTop = 0;
+let searchToken = 0;
+const pageTextCache = new Map();
+let searchIndexData = null;
+let searchIndexNormalized = null;
 
 function normalizeDigits(value) {
   const map = {
@@ -58,6 +79,222 @@ function normalizeDigits(value) {
     '۵': '5', '۶': '6', '۷': '7', '۸': '8', '۹': '9'
   };
   return String(value).replace(/[٠-٩۰-۹]/g, (digit) => map[digit] || digit);
+}
+
+function normalizeArabicText(value) {
+  return normalizeDigits(String(value || ''))
+    .normalize('NFKC')
+    .replace(/[\u064B-\u065F\u0670]/g, '')
+    .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
+
+function tokenizeQuery(value) {
+  const normalized = normalizeArabicText(value);
+  if (!normalized) return [];
+  return normalized.split(' ').filter((token) => token.length >= 2);
+}
+
+function extractPageTargetFromQuery(rawQuery) {
+  const normalized = normalizeDigits(rawQuery || '').trim().toLowerCase();
+  if (!normalized) return null;
+
+  // Supports: "25", "صفحة 25", "page 25", "p25", "رقم 25"
+  const directMatch = normalized.match(/(?:^|\s)(?:page|p|صفحة|رقم)?\s*[:#-]?\s*(\d{1,4})(?:\s|$)/);
+  if (!directMatch) return null;
+
+  const page = Number(directMatch[1]);
+  if (!Number.isFinite(page)) return null;
+  return clampPage(page);
+}
+
+function getFallbackImageSrc(pageNumber) {
+  const entry = fallbackPages.find((item) => item.page === pageNumber);
+  if (!entry || !entry.image) return '';
+  return `assets/images/${entry.image}`;
+}
+
+function getFallbackPageNode(pageNumber) {
+  if (!fallbackPagesStack) return null;
+  return fallbackPagesStack.querySelector(`[data-fallback-page="${pageNumber}"]`);
+}
+
+function scrollToFallbackPage(pageNumber, smooth = true) {
+  const node = getFallbackPageNode(pageNumber);
+  if (!node) return;
+  fallbackSyncLocked = true;
+  node.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto', block: 'start' });
+  window.setTimeout(() => {
+    fallbackSyncLocked = false;
+  }, smooth ? 420 : 80);
+}
+
+function wireFallbackScrollTracking() {
+  if (!canvasFrame || !fallbackPagesStack) return;
+  if (fallbackObserver) {
+    fallbackObserver.disconnect();
+  }
+
+  fallbackObserver = new IntersectionObserver((entries) => {
+    if (fallbackSyncLocked) return;
+    let best = null;
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      if (!best || entry.intersectionRatio > best.intersectionRatio) {
+        best = entry;
+      }
+    });
+    if (!best) return;
+    const page = Number(best.target.getAttribute('data-fallback-page'));
+    if (!Number.isFinite(page) || page === currentPage) return;
+
+    currentPage = clampPage(page);
+    setPageMeta();
+    activeSection = getActiveSectionForPage(currentPage);
+    highlightActiveIndex();
+    const url = new URL(window.location.href);
+    url.searchParams.set('page', String(currentPage));
+    window.history.replaceState({}, '', url.toString());
+  }, {
+    root: canvasFrame,
+    threshold: [0.5, 0.65, 0.8]
+  });
+
+  fallbackPagesStack.querySelectorAll('[data-fallback-page]').forEach((node) => {
+    fallbackObserver.observe(node);
+  });
+}
+
+function renderFallbackPagesStack() {
+  if (!canvasFrame) return;
+  canvasFrame.innerHTML = '';
+  canvasFrame.classList.add('fallback-scroll-mode');
+
+  fallbackPagesStack = document.createElement('div');
+  fallbackPagesStack.className = 'fallback-pages-stack';
+
+  fallbackPages.forEach((entry) => {
+    const item = document.createElement('article');
+    item.className = 'fallback-page-item';
+    item.setAttribute('data-fallback-page', String(entry.page));
+
+    const label = document.createElement('div');
+    label.className = 'fallback-page-label';
+    label.textContent = `الصفحة ${entry.page}`;
+
+    const image = document.createElement('img');
+    image.className = 'pdf-frame-fallback fallback-page-image';
+    image.alt = `صفحة ${entry.page}`;
+    image.loading = 'lazy';
+    image.decoding = 'async';
+    image.src = getFallbackImageSrc(entry.page);
+
+    const watermark = document.createElement('div');
+    watermark.className = 'pdf-watermark';
+    watermark.textContent = 'ملكية: دكتوره نجوي علوان';
+
+    item.appendChild(label);
+    item.appendChild(image);
+    item.appendChild(watermark);
+    fallbackPagesStack.appendChild(item);
+  });
+
+  canvasFrame.appendChild(fallbackPagesStack);
+  wireFallbackScrollTracking();
+}
+
+async function loadFallbackContent() {
+  // Pre-rendered pages generated directly from assets/quran1.pdf.
+  fallbackPages = Array.from({ length: 241 }, (_, idx) => ({
+    page: idx + 1,
+    image: `quran-pages/quran-page-${String(idx + 1).padStart(3, '0')}.png`,
+    text: ''
+  }));
+  totalPages = fallbackPages.length;
+}
+
+async function ensureSearchIndexLoaded() {
+  if (searchIndexData && searchIndexNormalized) return;
+  try {
+    const response = await fetch('assets/search_index.json');
+    const raw = await response.json();
+    searchIndexData = raw && typeof raw === 'object' ? raw : {};
+    searchIndexNormalized = new Map();
+
+    Object.entries(searchIndexData).forEach(([term, pages]) => {
+      const normalizedTerm = normalizeArabicText(term);
+      if (!normalizedTerm) return;
+      if (!Array.isArray(pages)) return;
+      const validPages = pages
+        .map((p) => Number(normalizeDigits(p)))
+        .filter((p) => Number.isFinite(p) && p >= 1);
+      if (!validPages.length) return;
+
+      if (!searchIndexNormalized.has(normalizedTerm)) {
+        searchIndexNormalized.set(normalizedTerm, new Set());
+      }
+      const bag = searchIndexNormalized.get(normalizedTerm);
+      validPages.forEach((p) => bag.add(clampPage(p)));
+    });
+  } catch (error) {
+    searchIndexData = {};
+    searchIndexNormalized = new Map();
+    // eslint-disable-next-line no-console
+    console.warn('Failed to load search index:', error?.message || error);
+  }
+}
+
+function searchPagesBySentence(query, maxResults = 25) {
+  if (!searchIndexNormalized || !searchIndexNormalized.size) return [];
+  const normalizedQuery = normalizeArabicText(query);
+  const terms = tokenizeQuery(query);
+  if (!terms.length) return [];
+
+  const scores = new Map();
+  const matchedTermsByPage = new Map();
+
+  terms.forEach((term) => {
+    const pages = searchIndexNormalized.get(term);
+    if (!pages) return;
+    pages.forEach((page) => {
+      scores.set(page, (scores.get(page) || 0) + 1);
+      if (!matchedTermsByPage.has(page)) {
+        matchedTermsByPage.set(page, new Set());
+      }
+      matchedTermsByPage.get(page).add(term);
+    });
+  });
+
+  const exactPages = searchIndexNormalized.get(normalizedQuery);
+  if (exactPages) {
+    exactPages.forEach((page) => {
+      scores.set(page, (scores.get(page) || 0) + terms.length + 2);
+      if (!matchedTermsByPage.has(page)) {
+        matchedTermsByPage.set(page, new Set());
+      }
+      matchedTermsByPage.get(page).add(normalizedQuery);
+    });
+  }
+
+  return [...scores.entries()]
+    .sort((a, b) => {
+      if (b[1] !== a[1]) return b[1] - a[1];
+      return a[0] - b[0];
+    })
+    .slice(0, maxResults)
+    .map(([page, score]) => {
+      const matched = [...(matchedTermsByPage.get(page) || [])]
+        .slice(0, 5)
+        .join(' ، ');
+      return {
+        page,
+        score,
+        snippet: matched ? `مطابقات: ${matched}` : `تطابق مع: ${query}`,
+        source: 'index'
+      };
+    });
 }
 
 function isDebugMode() {
@@ -86,6 +323,18 @@ function getFallbackIndexEntries() {
     { title: 'منتصف المصحف', page: 200, level: 2 },
     { title: 'الأجزاء الأخيرة', page: 450, level: 1 }
   ];
+}
+
+function buildPageListEntries() {
+  const entries = [];
+  for (let page = 1; page <= totalPages; page += 1) {
+    entries.push({
+      title: `الصفحة ${page}`,
+      page,
+      level: 1
+    });
+  }
+  return entries;
 }
 
 function showTocError(message, details) {
@@ -147,6 +396,223 @@ function setPageMeta() {
   if (pageTotal) {
     pageTotal.textContent = `/ ${totalPages}`;
   }
+  if (quickPageInput) {
+    quickPageInput.max = String(totalPages);
+    if (!quickPageInput.value || quickPageInput.value === '0') {
+      quickPageInput.value = String(currentPage);
+    }
+  }
+}
+
+function openQuickNavPanel() {
+  if (!quickNavPanel) return;
+  quickNavPanel.hidden = false;
+  if (quickPageInput) quickPageInput.value = String(currentPage);
+  showControls();
+}
+
+function closeQuickNavPanel() {
+  if (!quickNavPanel) return;
+  quickNavPanel.hidden = true;
+}
+
+function jumpFromQuickInput() {
+  if (!quickPageInput) return;
+  const parsed = Number(normalizeDigits(quickPageInput.value));
+  if (!Number.isFinite(parsed)) {
+    quickPageInput.value = String(currentPage);
+    return;
+  }
+  const target = clampPage(parsed);
+  navigateToPage(target, { reason: 'quick-jump' });
+  closeQuickNavPanel();
+}
+
+function buildSnippet(text, query) {
+  const normalizedText = normalizeDigits(text);
+  const normalizedQuery = normalizeDigits(query);
+  const idx = normalizedText.toLowerCase().indexOf(normalizedQuery.toLowerCase());
+  if (idx < 0) return text.slice(0, 110);
+  const start = Math.max(0, idx - 35);
+  const end = Math.min(text.length, idx + query.length + 55);
+  return text.slice(start, end).replace(/\s+/g, ' ').trim();
+}
+
+function renderKeywordResults(results, query) {
+  if (!keywordResults) return;
+  if (!results.length) {
+    keywordResults.innerHTML = '<div class="empty">لا توجد نتائج مطابقة لهذه الكلمة.</div>';
+    return;
+  }
+
+  const pattern = new RegExp(`(${escapeRegExp(query)})`, 'ig');
+  keywordResults.innerHTML = results.map((item) => `
+    <button class="quick-result-item" type="button" data-result-page="${item.page}">
+      <span class="quick-result-page">الصفحة ${item.page}</span>
+      <span class="quick-result-snippet">${item.snippet.replace(pattern, '<mark>$1</mark>')}</span>
+    </button>
+  `).join('');
+
+  keywordResults.querySelectorAll('[data-result-page]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const target = Number(button.getAttribute('data-result-page'));
+      navigateToPage(target, { reason: 'keyword-search' });
+      closeQuickNavPanel();
+    });
+  });
+}
+
+function renderPrimarySearchResults(results, query) {
+  if (!primarySearchResults) return;
+  if (!results.length) {
+    primarySearchResults.innerHTML = '<div class="empty">لا توجد نتائج مطابقة لهذه الكلمة.</div>';
+    return;
+  }
+
+  const pattern = new RegExp(`(${escapeRegExp(query)})`, 'ig');
+  primarySearchResults.innerHTML = results.map((item) => `
+    <button class="quick-result-item" type="button" data-primary-result-page="${item.page}">
+      <span class="quick-result-page">الصفحة ${item.page}${item.source === 'index' ? ' • فهرس' : ''}</span>
+      <span class="quick-result-snippet">${String(item.snippet || '').replace(pattern, '<mark>$1</mark>')}</span>
+    </button>
+  `).join('');
+
+  primarySearchResults.querySelectorAll('[data-primary-result-page]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const target = Number(button.getAttribute('data-primary-result-page'));
+      navigateToPage(target, { reason: 'primary-search' });
+    });
+  });
+}
+
+async function getPageText(pageNumber) {
+  if (pageTextCache.has(pageNumber)) {
+    return pageTextCache.get(pageNumber);
+  }
+  if (!pdfDoc) return '';
+
+  const pageRef = await pdfDoc.getPage(pageNumber);
+  const textContent = await pageRef.getTextContent();
+  const text = textContent.items.map((item) => item.str || '').join(' ').replace(/\s+/g, ' ').trim();
+  pageTextCache.set(pageNumber, text);
+  return text;
+}
+
+async function searchPdfPages(query, maxResults = 25, onProgress = null) {
+  const token = ++searchToken;
+  const results = [];
+  for (let page = 1; page <= totalPages; page += 1) {
+    if (token !== searchToken) return [];
+    // eslint-disable-next-line no-await-in-loop
+    const text = await getPageText(page);
+    if (normalizeDigits(text).toLowerCase().includes(query.toLowerCase())) {
+      results.push({
+        page,
+        snippet: buildSnippet(text, query),
+        source: 'page'
+      });
+      if (results.length >= maxResults) break;
+    }
+
+    if (typeof onProgress === 'function' && page % 20 === 0) {
+      onProgress(page);
+      // eslint-disable-next-line no-await-in-loop
+      await new Promise((resolve) => window.setTimeout(resolve, 0));
+    }
+  }
+  return results;
+}
+
+async function performKeywordSearch() {
+  if (!keywordInput || !keywordResults) return;
+  const query = normalizeDigits(keywordInput.value.trim());
+  if (!query) {
+    keywordResults.innerHTML = '<div class="empty">اكتب كلمة للبحث داخل الصفحات.</div>';
+    return;
+  }
+
+  const pageTarget = extractPageTargetFromQuery(query);
+  if (pageTarget !== null) {
+    navigateToPage(pageTarget, { reason: 'keyword-search-page-number' });
+    keywordResults.innerHTML = `<div class="empty">تم الانتقال إلى الصفحة ${pageTarget}.</div>`;
+    closeQuickNavPanel();
+    return;
+  }
+
+  await ensureSearchIndexLoaded();
+
+  keywordResults.innerHTML = '<div class="empty">جاري البحث داخل الصفحات...</div>';
+  let results = searchPagesBySentence(query, 25);
+  if (!results.length && fallbackMode && fallbackPages.length) {
+    results = fallbackPages
+      .filter((entry) => normalizeArabicText(entry.text).includes(normalizeArabicText(query)))
+      .slice(0, 25)
+      .map((entry) => ({
+        page: entry.page,
+        snippet: buildSnippet(entry.text || `الصفحة ${entry.page}`, query),
+        source: 'page'
+      }));
+  } else if (!results.length && pdfDoc && !fallbackMode) {
+    results = await searchPdfPages(query, 25, (page) => {
+      keywordResults.innerHTML = `<div class="empty">جاري البحث... تم فحص ${page} صفحة</div>`;
+    });
+  }
+  renderKeywordResults(results, query);
+}
+
+async function performPrimarySearch() {
+  if (!indexSearchInput || !primarySearchResults) return;
+  const query = normalizeDigits(indexSearchInput.value.trim());
+
+  if (!query) {
+    primarySearchResults.innerHTML = '<div class="empty">اكتب كلمة دلالية أو رقم صفحة ثم اضغط بحث.</div>';
+    return;
+  }
+
+  const pageTarget = extractPageTargetFromQuery(query);
+  if (pageTarget !== null) {
+    navigateToPage(pageTarget, { reason: 'primary-search-number' });
+    primarySearchResults.innerHTML = `<div class="empty">تم الانتقال إلى الصفحة ${pageTarget}.</div>`;
+    return;
+  }
+
+  const indexMatches = indexEntries
+    .filter((entry) => normalizeDigits(entry.title).toLowerCase().includes(query.toLowerCase()))
+    .slice(0, 12)
+    .map((entry) => ({
+      page: entry.page,
+      snippet: entry.title,
+      source: 'index'
+    }));
+
+  primarySearchResults.innerHTML = '<div class="empty">جاري البحث داخل الفهرس والصفحات...</div>';
+  await ensureSearchIndexLoaded();
+  let pageMatches = searchPagesBySentence(query, 20);
+  if (!pageMatches.length && fallbackMode && fallbackPages.length) {
+    pageMatches = fallbackPages
+      .filter((entry) => normalizeArabicText(entry.text).includes(normalizeArabicText(query)))
+      .slice(0, 20)
+      .map((entry) => ({
+        page: entry.page,
+        snippet: buildSnippet(entry.text || `الصفحة ${entry.page}`, query),
+        source: 'page'
+      }));
+  } else if (!pageMatches.length && pdfDoc && !fallbackMode) {
+    pageMatches = await searchPdfPages(query, 20, (page) => {
+      primarySearchResults.innerHTML = `<div class="empty">جاري فحص الصفحات... ${page}</div>`;
+    });
+  }
+
+  const merged = [];
+  const seen = new Set();
+  [...indexMatches, ...pageMatches].forEach((item) => {
+    if (!item || !item.page) return;
+    if (seen.has(item.page)) return;
+    seen.add(item.page);
+    merged.push(item);
+  });
+
+  renderPrimarySearchResults(merged.slice(0, 25), query);
 }
 
 function jumpToTypedPage() {
@@ -443,10 +909,9 @@ async function buildIndexEntries() {
   return getFallbackIndexEntries();
 }
 
-function renderFallbackPage() {
-  if (!fallbackIframe) return;
-
-  fallbackIframe.src = `${PDF_PATH}#page=${currentPage}&zoom=page-width`;
+function renderFallbackPage(reason = 'fallback') {
+  if (!fallbackPagesStack) return;
+  scrollToFallbackPage(currentPage, reason !== 'initial-fallback');
   zoom = 1;
   setPageMeta();
 
@@ -454,7 +919,7 @@ function renderFallbackPage() {
   highlightActiveIndex();
 
   document.dispatchEvent(new CustomEvent('pdf:rendered', {
-    detail: { page: currentPage, reason: 'fallback' }
+    detail: { page: currentPage, reason }
   }));
 }
 
@@ -474,7 +939,8 @@ function getActiveSectionForPage(pageNumber) {
 
 function flashSectionTitle(title) {
   if (!flash) return;
-  flash.textContent = `تم الانتقال إلى: ${title}`;
+  const safeTitle = String(title || '').trim() || `الصفحة ${currentPage}`;
+  flash.textContent = `تم الانتقال إلى: ${safeTitle}`;
   flash.classList.add('show');
   window.setTimeout(() => flash.classList.remove('show'), 1200);
 }
@@ -482,12 +948,12 @@ function flashSectionTitle(title) {
 function highlightActiveIndex() {
   const nodes = indexList ? indexList.querySelectorAll('.index-item') : [];
   nodes.forEach((node) => {
-    const isActive = Number(node.getAttribute('data-page')) === (activeSection ? activeSection.page : -1);
+    const isActive = Number(node.getAttribute('data-page')) === currentPage;
     node.classList.toggle('is-active', isActive);
   });
 
   if (sectionTitle) {
-    sectionTitle.textContent = activeSection ? activeSection.title : 'بدون قسم محدد';
+    sectionTitle.textContent = activeSection ? activeSection.title : `الصفحة ${currentPage}`;
   }
 }
 
@@ -526,6 +992,7 @@ function renderIndex(entries, query = '') {
       }
 
       navigateToPage(targetPage, {
+        force: true,
         flashTitle: targetEntry ? targetEntry.title : null,
         reason: 'index-click'
       });
@@ -547,17 +1014,24 @@ function wireIndexSearch() {
   indexSearchInput.addEventListener('input', () => {
     const query = normalizeDigits(indexSearchInput.value.trim().toLowerCase());
     if (!query) {
-      filteredEntries = [...indexEntries];
-      renderIndex(filteredEntries);
+      filteredPageListEntries = [...pageListEntries];
+      renderIndex(filteredPageListEntries);
       return;
     }
 
-    filteredEntries = indexEntries.filter((entry) =>
+    filteredPageListEntries = pageListEntries.filter((entry) =>
       normalizeDigits(entry.title.toLowerCase()).includes(query)
       || String(entry.page).includes(query)
     );
 
-    renderIndex(filteredEntries, query);
+    renderIndex(filteredPageListEntries, query);
+  });
+
+  indexSearchInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      performPrimarySearch();
+    }
   });
 }
 
@@ -582,7 +1056,7 @@ function wireControlsVisibility() {
 
 async function renderCurrentPage(reason = 'navigation') {
   if (fallbackMode) {
-    renderFallbackPage();
+    renderFallbackPage(reason);
     return;
   }
 
@@ -782,24 +1256,27 @@ function wireFreePanAndZoom() {
   });
 }
 
-function initFallbackViewer(reason) {
+async function initFallbackViewer(reason) {
   fallbackMode = true;
 
   if (pdfCanvas) {
     pdfCanvas.style.display = 'none';
   }
 
+  await loadFallbackContent();
+  currentPage = clampPage(currentPage);
+
   if (canvasFrame) {
-    fallbackIframe = document.createElement('iframe');
-    fallbackIframe.className = 'pdf-frame-fallback';
-    fallbackIframe.title = 'عارض PDF الاحتياطي';
-    fallbackIframe.setAttribute('loading', 'eager');
-    canvasFrame.appendChild(fallbackIframe);
+    renderFallbackPagesStack();
   }
 
   indexEntries = getFallbackIndexEntries();
-  filteredEntries = [...indexEntries];
-  renderIndex(filteredEntries);
+  pageListEntries = buildPageListEntries();
+  filteredPageListEntries = [...pageListEntries];
+  renderIndex(filteredPageListEntries);
+  if (indexCaption) {
+    indexCaption.textContent = `عرض الصفحات المتاحة بالتسلسل (${totalPages} صفحة)`;
+  }
   wireIndexSearch();
   wireSidebarToggle();
   wireNavigation();
@@ -807,9 +1284,9 @@ function initFallbackViewer(reason) {
   wireAutoResize();
 
   if (sectionTitle) {
-    sectionTitle.textContent = reason === 'file'
-      ? 'وضع محلي: تشغيل مباشر لملف PDF'
-      : 'وضع احتياطي: تعذر تشغيل PDF.js';
+    sectionTitle.textContent = (reason === 'forced-image' || reason === 'file')
+      ? 'عرض الصفحات داخل العارض'
+      : 'وضع احتياطي: عرض الصفحات بدون تنزيل إجباري';
   }
 
   tocExtractionWarning = reason !== 'file'
@@ -843,11 +1320,30 @@ function wireNavigation() {
   if (zoomOutBtn) {
     zoomOutBtn.addEventListener('click', () => adjustZoom(-0.12));
   }
-  if (downloadBtn) {
-    downloadBtn.addEventListener('click', () => {
-      window.location.href = PDF_PATH;
-    });
-  }
+  const triggerCompressedDownload = async () => {
+    const resolvedUrl = new URL(DOWNLOAD_PATH, window.location.href).toString();
+    const fileName = DOWNLOAD_PATH.split('/').pop() || 'book.pdf';
+
+    // Some browsers (especially mobile) are picky with download attribute.
+    // Verify URL and fallback to direct open if needed.
+    try {
+      const probe = await fetch(resolvedUrl, { method: 'HEAD' });
+      if (!probe.ok) throw new Error(`HTTP ${probe.status}`);
+    } catch (error) {
+      window.open(resolvedUrl, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+    const link = document.createElement('a');
+    link.href = resolvedUrl;
+    link.download = fileName;
+    link.rel = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  };
+  if (downloadBtn) downloadBtn.addEventListener('click', () => { triggerCompressedDownload(); });
+  if (topDownloadBtn) topDownloadBtn.addEventListener('click', () => { triggerCompressedDownload(); });
   if (fullscreenBtn) {
     fullscreenBtn.addEventListener('click', async () => {
       const root = document.querySelector('[data-cinematic-root]');
@@ -877,6 +1373,50 @@ function wireNavigation() {
         pageInput.value = String(currentPage);
       }
     });
+  }
+
+  if (quickNavToggle) {
+    quickNavToggle.addEventListener('click', () => {
+      if (quickNavPanel && !quickNavPanel.hidden) {
+        closeQuickNavPanel();
+      } else {
+        openQuickNavPanel();
+      }
+    });
+  }
+
+  if (quickNavClose) {
+    quickNavClose.addEventListener('click', closeQuickNavPanel);
+  }
+
+  if (quickPageGo) {
+    quickPageGo.addEventListener('click', jumpFromQuickInput);
+  }
+
+  if (quickPageInput) {
+    quickPageInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        jumpFromQuickInput();
+      }
+    });
+  }
+
+  if (keywordSearchBtn) {
+    keywordSearchBtn.addEventListener('click', performKeywordSearch);
+  }
+
+  if (keywordInput) {
+    keywordInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        performKeywordSearch();
+      }
+    });
+  }
+
+  if (primarySearchBtn) {
+    primarySearchBtn.addEventListener('click', performPrimarySearch);
   }
 
   document.addEventListener('fullscreenchange', () => {
@@ -915,28 +1455,44 @@ function wireNavigation() {
 
 async function initViewer() {
   if (!pdfCanvas) return;
+  await ensureSearchIndexLoaded();
+
+  // Stable mode: force in-app page rendering via images to avoid browser PDF download behavior.
+  if (FORCE_IMAGE_VIEW) {
+    await initFallbackViewer('forced-image');
+    return;
+  }
 
   if (window.location.protocol === 'file:') {
-    initFallbackViewer('file');
+    await initFallbackViewer('file');
     return;
   }
 
   if (!window.pdfjsLib) {
-    initFallbackViewer('no-pdfjs');
+    await initFallbackViewer('no-pdfjs');
     return;
   }
 
   window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.worker.min.js';
 
   try {
-    const loadingTask = window.pdfjsLib.getDocument(PDF_PATH);
+    const loadingTask = window.pdfjsLib.getDocument({
+      url: PDF_PATH,
+      disableStream: true,
+      disableAutoFetch: true,
+      disableRange: true
+    });
     pdfDoc = await loadingTask.promise;
     totalPages = pdfDoc.numPages || totalPages;
     currentPage = clampPage(currentPage);
 
     indexEntries = await buildIndexEntries();
-    filteredEntries = [...indexEntries];
-    renderIndex(filteredEntries);
+    pageListEntries = buildPageListEntries();
+    filteredPageListEntries = [...pageListEntries];
+    renderIndex(filteredPageListEntries);
+    if (indexCaption) {
+      indexCaption.textContent = 'عرض جميع الصفحات بالتسلسل';
+    }
     wireIndexSearch();
     wireSidebarToggle();
     wireNavigation();
@@ -947,12 +1503,9 @@ async function initViewer() {
 
     await navigateToPage(currentPage, { force: true, reason: 'initial-load' });
   } catch (error) {
-    showTocError('تعذر تحميل ملف PDF. تأكد من وجود الملف أو الاتصال بالإنترنت.', error?.message);
-    if (sectionTitle) {
-      sectionTitle.textContent = 'خطأ في التحميل';
-    }
     // eslint-disable-next-line no-console
-    console.error('Viewer initialization failed:', error);
+    console.error('Viewer initialization failed, switching to safe fallback:', error);
+    await initFallbackViewer('pdf-load-failed');
   }
 }
 
