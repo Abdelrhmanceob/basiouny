@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#c7a45a">
+  <meta name="description" content="ثبّت منصة الدليل المفيد كتطبيق ويب واختر واجهة PDF المفضلة">
+  <title>منصة الدليل المفيد | تثبيت التطبيق</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/assets/dlel.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/platform.css?v=20260704-3">
+</head>
+<body class="rtl">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html"><span class="brand-badge">د</span><span>منصة الدليل المفيد</span></a>
+      <button class="icon-btn mobile-toggle" data-mobile-toggle aria-label="تبديل قائمة التنقل">☰</button>
+      <nav class="nav-links" data-nav-links>
+        <a class="nav-link" href="index.html">الرئيسية</a>
+        <a class="nav-link" href="library.html">المكتبة</a>
+        <a class="nav-link" href="viewer.html">العارض</a>
+        <a class="nav-link" href="categories.html">التصنيفات</a>
+        <a class="nav-link" href="search.html">البحث</a>
+        <a class="nav-link" href="dashboard.html">لوحة التحكم</a>
+        <a class="nav-link" href="install.html">تثبيت التطبيق</a>
+        <a class="nav-link" href="about.html">من نحن</a>
+        <a class="nav-link" href="contact.html">تواصل معنا</a>
+      </nav>
+      <div class="top-actions">
+        <button class="icon-btn" data-lang-toggle aria-label="تبديل اتجاه الصفحة">EN</button>
+        <button class="icon-btn" data-dark-toggle aria-label="تبديل الوضع الليلي">◐</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <nav class="breadcrumbs"><a href="index.html">الرئيسية</a> / <span>تثبيت التطبيق</span></nav>
+    <section class="section">
+      <div class="section-head">
+        <div class="stack" style="gap:0.35rem">
+          <span class="eyebrow">PWA — Progressive Web App</span>
+          <h1>ثبّت المنصة كتطبيق ويب</h1>
+          <p class="muted">يمكن للزائر تثبيت الموقع على سطح المكتب أو الجوال، وتحديد واجهة PDF معيّنة كصفحة بداية للتطبيق، أو تحميل نسخة PDF مفهرسة بالكامل.</p>
+        </div>
+      </div>
+      <div data-pwa-install-root></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="stack">
+        <strong>منصة الدليل المفيد</strong>
+        <p class="muted">تثبيت التطبيق — إعداد الدكتورة نجوى علوان بإشراف الشيخ بسيوني أبو يوسف.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="library.html">المكتبة</a>
+        <a href="viewer.html">العارض</a>
+        <a href="install.html">تثبيت التطبيق</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/platform.js"></script>
+  <script type="module" src="assets/js/pwa.js"></script>
+</body>
+</html>

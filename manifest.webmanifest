@@ -1,0 +1,29 @@
+{
+  "name": "منصة الدليل المفيد",
+  "short_name": "الدليل المفيد",
+  "description": "منصة عرض الكتب والمراجع بصيغة PDF مع فهرس تفاعلي",
+  "start_url": "/index.html?utm_source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a100d",
+  "theme_color": "#c7a45a",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "/assets/dlel.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/dlel.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["books", "education"],
+  "prefer_related_applications": false
+}

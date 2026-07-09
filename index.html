@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكتبة النور الرقمية | الرئيسية</title>
+    <meta name="theme-color" content="#c7a45a">
+    <meta name="description" content="منصة عرض الكتب والمراجع بصيغة PDF مع فهرس تفاعلي">
+    <title>منصة الدليل المفيد | الرئيسية</title>
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="apple-touch-icon" href="/assets/dlel.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,9 +16,9 @@
 <body class="rtl">
     <header class="topbar">
         <div class="container topbar-inner">
-            <a class="brand" href="index.html" aria-label="الصفحة الرئيسية لمكتبة النور الرقمية">
-                <span class="brand-badge">ن</span>
-                <span>مكتبة النور الرقمية</span>
+            <a class="brand" href="index.html" aria-label="الصفحة الرئيسية لمنصة الدليل المفيد">
+                <span class="brand-badge">د</span>
+                <span>منصة الدليل المفيد</span>
             </a>
             <button class="icon-btn mobile-toggle" data-mobile-toggle aria-label="تبديل قائمة التنقل">☰</button>
             <nav class="nav-links" data-nav-links>
@@ -24,6 +28,7 @@
                 <a class="nav-link" href="categories.html">التصنيفات</a>
                 <a class="nav-link" href="search.html">البحث</a>
                 <a class="nav-link" href="dashboard.html">لوحة التحكم</a>
+                <a class="nav-link" href="install.html">تثبيت التطبيق</a>
                 <a class="nav-link" href="about.html">من نحن</a>
                 <a class="nav-link" href="contact.html">تواصل معنا</a>
             </nav>
@@ -38,87 +43,39 @@
         <section class="hero">
             <article class="hero-card reveal">
                 <div class="stack">
-                    <span class="eyebrow">تصميم عصري لعرض الكتب الإسلامية</span>
-                    <h1>اكتشف مكتبة PDF إسلامية بواجهة حديثة وهادئة</h1>
-                    <p class="muted">منصة متخصصة في عرض الكتب الإسلامية والمراجع الشرعية بصيغة PDF مع تجربة قراءة مريحة، تنقل سريع، وبحث ذكي داخل المحتوى.</p>
+                    <span class="eyebrow">إعداد الدكتورة نجوى علوان — بإشراف الشيخ بسيوني أبو يوسف</span>
+                    <h1>منصة الدليل المفيد لعرض الكتب والمراجع بصيغة PDF</h1>
+                    <p class="muted">منصة متخصصة في عرض الكتب الإسلامية والمراجع الشرعية بصيغة PDF، مع تجربة قراءة مريحة، تنقل سريع، وبحث ذكي داخل المحتوى — من إعداد الدكتورة نجوى علوان تحت إشراف الشيخ بسيوني أبو يوسف.</p>
                     <form class="search-wrap" data-search-form>
                         <input class="search-input" type="search" placeholder="ابحث في الكتب، التفاسير، والشروح..." aria-label="البحث في ملفات PDF">
                         <button class="btn primary search-btn" type="submit">بحث</button>
                     </form>
                     <div class="actions-row">
-                        <a class="btn primary" href="library.html">تصفح المكتبة</a>
+                        <a class="btn primary" href="#books">تصفح الكتب</a>
                         <a class="btn" href="viewer.html?doc=quran1.pdf">فتح القارئ</a>
+                        <a class="btn" href="install.html">تثبيت كتطبيق</a>
                     </div>
-                </div>
-                <div class="card stack" aria-label="إحصاءات سريعة">
-                    <h3>إحصاءات سريعة</h3>
-                    <div class="kpis">
-                        <div class="kpi">
-                            <strong>604</strong>
-                            <p class="muted">صفحة متاحة</p>
-                        </div>
-                        <div class="kpi">
-                            <strong>8</strong>
-                            <p class="muted">أقسام رئيسية</p>
-                        </div>
-                        <div class="kpi">
-                            <strong>2</strong>
-                            <p class="muted">نقرة للمتابعة</p>
-                        </div>
-                    </div>
-                    <a class="btn" href="assets/quran1.pdf" download>تحميل كتاب PDF</a>
                 </div>
             </article>
         </section>
 
-        <section class="section">
+        <section class="section landing-books-section" id="books">
             <div class="section-head">
-                <h2>أقسام المكتبة</h2>
+                <div class="stack" style="gap:0.35rem">
+                    <span class="eyebrow">مكتبة المنصة</span>
+                    <h2>الكتب والمراجع المتاحة</h2>
+                    <p class="muted">اختر الكتاب وافتحه مباشرة أو حمّله بصيغة PDF</p>
+                </div>
             </div>
-            <div class="grid cards-4">
-                <a class="card reveal" href="library.html"><h3>مكتبة PDF</h3><p class="muted">تصفح كتب التفسير والحديث والفقه.</p></a>
-                <a class="card reveal" href="categories.html"><h3>التصنيفات</h3><p class="muted">انتقل حسب المجال العلمي بسهولة.</p></a>
-                <a class="card reveal" href="dashboard.html"><h3>لوحة المستخدم</h3><p class="muted">تابع تقدمك وكتبك المحفوظة.</p></a>
-                <a class="card reveal" href="contact.html"><h3>تواصل معنا</h3><p class="muted">شاركنا الاقتراحات والكتب المطلوبة.</p></a>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section-head">
-                <h2>كتب مميزة</h2>
-                <a class="btn ghost" href="library.html">عرض الكل</a>
-            </div>
-            <div class="grid cards-3">
-                <article class="card reveal">
-                    <span class="tag">مميز</span>
-                    <h3 style="margin-top:.5rem">المصحف الشريف PDF</h3>
-                    <p class="muted">نسخة واضحة للقراءة اليومية والتدبر.</p>
-                    <div class="actions-row">
-                        <a class="btn primary" href="viewer.html?doc=quran1.pdf">فتح</a>
-                        <a class="btn" href="assets/quran1.pdf" download>تحميل</a>
-                    </div>
-                </article>
-                <article class="card reveal">
-                    <span class="tag">شائع</span>
-                    <h3 style="margin-top:.5rem">قارئ قابل للبحث</h3>
-                    <p class="muted">ابحث في المحتوى وافتح الصفحة المطابقة مباشرة.</p>
-                    <div class="actions-row"><a class="btn" href="search.html?q=quran">جرّب البحث</a></div>
-                </article>
-                <article class="card reveal">
-                    <span class="tag">جديد</span>
-                    <h3 style="margin-top:.5rem">عارض مطوّر</h3>
-                    <p class="muted">تكبير، تحميل، وتنقل مرن بين أقسام الكتاب.</p>
-                    <div class="actions-row"><a class="btn" href="viewer.html">فتح العارض</a></div>
-                </article>
-            </div>
+            <div class="islamic-books-grid" data-landing-books aria-live="polite"></div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container footer-inner">
             <div class="stack">
-                <strong>مكتبة النور الرقمية</strong>
-                <p class="muted">منصة عصرية لعرض كتب PDF الإسلامية بطريقة واضحة وسهلة لجميع المستخدمين.</p>
+                <strong>منصة الدليل المفيد</strong>
+                <p class="muted">منصة عصرية لعرض كتب PDF الإسلامية — إعداد الدكتورة نجوى علوان بإشراف الشيخ بسيوني أبو يوسف.</p>
             </div>
             <nav class="footer-links" aria-label="روابط التذييل">
                 <a href="index.html">الرئيسية</a>
@@ -132,10 +89,10 @@
             </nav>
         </div>
         <div class="container" style="padding: 0 0 1.2rem; text-align:center;">
-            <p class="muted">صاحب الفكرة والتصميم: الشيخ بسيوني ابويوسف</p>
+            <p class="muted">حقوق المحتوى: الدكتورة نجوى علوان — الفكرة والتصميم: الشيخ بسيوني أبو يوسف</p>
         </div>
     </footer>
 
-    <script src="assets/js/platform.js"></script>
+    <script src="assets/js/platform.js?v=20260703-1"></script>
 </body>
 </html>

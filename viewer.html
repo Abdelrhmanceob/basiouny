@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مكتبة النور الرقمية | العارض</title>
+  <meta name="theme-color" content="#c7a45a">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/assets/dlel.png">
+  <title>منصة الدليل المفيد | العارض</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/platform.css?v=20260422-1">
+  <link rel="stylesheet" href="assets/css/platform.css?v=20260709-pwa-compressed">
 </head>
 <body class="rtl dark viewer-mode">
   <header class="topbar">
     <div class="container topbar-inner">
-      <a class="brand" href="index.html"><span class="brand-badge">ن</span><span>مكتبة النور الرقمية</span></a>
+      <a class="brand" href="index.html"><span class="brand-badge">د</span><span>منصة الدليل المفيد</span></a>
       <button class="icon-btn mobile-toggle" data-mobile-toggle aria-label="تبديل قائمة التنقل">☰</button>
       <nav class="nav-links" data-nav-links>
         <a class="nav-link" href="index.html">الرئيسية</a>
@@ -21,6 +24,7 @@
         <a class="nav-link" href="categories.html">التصنيفات</a>
         <a class="nav-link" href="search.html">البحث</a>
         <a class="nav-link" href="dashboard.html">لوحة التحكم</a>
+        <a class="nav-link" href="install.html">تثبيت التطبيق</a>
         <a class="nav-link" href="about.html">من نحن</a>
         <a class="nav-link" href="contact.html">تواصل معنا</a>
       </nav>
@@ -35,30 +39,71 @@
     <section class="cinematic-viewer" data-cinematic-root>
       <aside class="cinematic-sidebar" data-sidebar>
         <div class="sidebar-head">
-          <h2>كل صفحات PDF</h2>
-          <button class="icon-btn" data-sidebar-toggle aria-label="طي القائمة">⟨</button>
+          <h2>فهرس المحتويات</h2>
+          <button class="icon-btn close-btn" data-close-sidebar data-sidebar-toggle aria-label="إغلاق الفهرس">✕</button>
         </div>
-        <div class="index-caption">عرض جميع الصفحات بالتسلسل</div>
+        <div class="viewer-search-wrap viewer-search-wrap-primary sidebar-search">
+          <input type="search" class="search-input" data-index-search placeholder="ابحث في الفهرس أو رقم صفحة..." aria-label="بحث في الفهرس">
+          <button class="btn primary" type="button" data-primary-search-btn>⌕</button>
+        </div>
+        <div class="index-caption">الموضوع ورقم الصفحة — اضغط للانتقال</div>
         <div class="index-list" data-index-list aria-live="polite"></div>
       </aside>
 
       <div class="cinematic-stage-wrap">
-        <button class="sidebar-fab" data-sidebar-toggle aria-label="فتح الفهرس">☰</button>
-        <div class="viewer-meta-bar">
-          <div class="meta-section">
-            <span class="meta-label">القسم الحالي</span>
-            <strong data-section-title>جار تحميل الفهرس...</strong>
-          </div>
-          <div class="meta-tags">
-            <span class="tag" data-page-indicator>1 / 604</span>
-            <span class="tag" data-zoom-indicator>100%</span>
-            <div id="pageselector-component-container" class="page-selector" aria-label="محدد الصفحات">
-              <span class="page-selector-label">اذهب إلى</span>
-              <input type="number" min="1" value="1" data-page-input aria-label="رقم الصفحة">
-              <span class="page-selector-total" data-page-total>/ 604</span>
-              <button class="icon-btn" type="button" data-page-go aria-label="انتقال للصفحة" title="انتقال للصفحة">↵</button>
+        <div class="reader-toolbar viewer-meta-bar" data-reader-toolbar>
+          <div class="toolbar-group toolbar-book">
+            <button class="toolbar-btn toolbar-index-btn" type="button" data-sidebar-toggle aria-label="فتح الفهرس">
+              <span class="toolbar-btn-icon">☰</span>
+              <span class="toolbar-btn-text">الفهرس</span>
+            </button>
+            <div class="toolbar-book-info">
+              <span class="meta-label">الكتاب</span>
+              <strong data-section-title>الدليل المفيد — جار التحميل...</strong>
             </div>
           </div>
+
+          <div class="toolbar-group toolbar-nav" aria-label="تنقل الصفحات">
+            <button class="toolbar-btn" type="button" data-prev-page aria-label="الصفحة السابقة" title="الصفحة السابقة">
+              <span class="toolbar-btn-icon">⟨</span>
+              <span class="toolbar-btn-text">سابق</span>
+            </button>
+            <span class="toolbar-page-tag tag" data-page-indicator>1 / 241</span>
+            <button class="toolbar-btn" type="button" data-next-page aria-label="الصفحة التالية" title="الصفحة التالية">
+              <span class="toolbar-btn-text">التالي</span>
+              <span class="toolbar-btn-icon">⟩</span>
+            </button>
+            <div class="page-selector toolbar-page-jump" aria-label="الانتقال لصفحة">
+              <span class="page-selector-label">صفحة</span>
+              <input type="number" min="1" value="1" data-page-input aria-label="رقم الصفحة">
+              <span class="page-selector-total" data-page-total>/ 241</span>
+              <button class="toolbar-btn toolbar-go-btn" type="button" data-page-go aria-label="انتقال" title="انتقال">↵</button>
+            </div>
+            <span class="tag toolbar-zoom-tag" data-zoom-indicator>100%</span>
+          </div>
+
+          <div class="toolbar-group toolbar-actions">
+            <button class="toolbar-btn" type="button" data-quick-nav-toggle aria-label="بحث سريع" title="بحث سريع">
+              <span class="toolbar-btn-icon">⌕</span>
+              <span class="toolbar-btn-text">بحث</span>
+            </button>
+            <button class="toolbar-btn" type="button" data-search-dock-toggle aria-label="إظهار البحث" title="إظهار البحث">
+              <span class="toolbar-btn-icon">🔎</span>
+            </button>
+            <button class="btn primary simulator-entry-btn" type="button" data-simulator-toggle aria-label="فتح المحاكي" title="عرض كامل بدون الفهرس">المحاكي</button>
+            <button class="toolbar-btn" type="button" data-download-pdf aria-label="تحميل PDF" title="تحميل PDF">⬇</button>
+            <button class="toolbar-btn meta-download-indexed" type="button" data-download-indexed aria-label="تحميل PDF مفهرس" title="تحميل PDF مفهرس">📑</button>
+            <button class="toolbar-btn" type="button" data-viewer-install aria-label="تثبيت كتطبيق" title="تثبيت كتطبيق">تثبيت</button>
+            <a class="btn toolbar-close-btn" data-exit-viewer data-close-pdf href="library.html" aria-label="إغلاق الكتاب والعودة للمكتبة" title="إغلاق الكتاب">✕ إغلاق</a>
+          </div>
+        </div>
+
+        <div class="simulator-toolbar" data-simulator-toolbar hidden>
+          <button class="toolbar-btn" type="button" data-prev-page aria-label="الصفحة السابقة">⟨</button>
+          <span class="toolbar-page-tag" data-simulator-page-indicator>1 / 241</span>
+          <button class="toolbar-btn" type="button" data-next-page aria-label="الصفحة التالية">⟩</button>
+          <button class="toolbar-btn" type="button" data-simulator-exit>خروج المحاكي</button>
+          <a class="btn toolbar-close-btn" data-exit-viewer data-close-pdf href="library.html">✕ إغلاق الكتاب</a>
         </div>
 
         <div class="quick-nav-panel" data-quick-nav-panel hidden>
@@ -86,42 +131,66 @@
         </div>
 
         <div class="cinematic-stage" data-stage>
-          <button class="icon-btn top-download-btn" data-download-top aria-label="تحميل الملف" title="تحميل الملف">⬇</button>
+          <button class="pdf-stage-close" type="button" data-close-pdf data-exit-viewer hidden aria-label="إغلاق الكتاب" title="إغلاق الكتاب والعودة للمكتبة">✕</button>
           <div class="pattern-overlay" aria-hidden="true"></div>
           <div class="page-glow" aria-hidden="true"></div>
-          <div class="canvas-frame" data-canvas-frame>
-            <canvas data-pdf-canvas></canvas>
+          <div class="pdf-loading-overlay" data-pdf-loading hidden>
+            <div class="pdf-loading-card">
+              <button class="icon-btn close-btn pdf-loading-close" type="button" data-close-loading aria-label="إلغاء التحميل">✕</button>
+              <div class="pdf-loading-spinner" aria-hidden="true"></div>
+              <p data-pdf-loading-text>جار تحميل الكتاب...</p>
+              <div class="pdf-loading-track"><span data-pdf-loading-bar></span></div>
+              <span class="pdf-loading-percent" data-pdf-loading-percent></span>
+            </div>
           </div>
+          <div class="canvas-frame" data-canvas-frame>
+            <div class="canvas-viewport" data-canvas-viewport>
+              <canvas data-pdf-canvas></canvas>
+              <div class="annotation-layer" data-annotation-layer aria-hidden="true"></div>
+            </div>
+          </div>
+          <nav class="pdf-side-nav" data-pdf-side-nav aria-label="تصفح صفحات PDF" hidden>
+            <button type="button" class="pdf-side-nav-btn" data-side-prev aria-label="الصفحة السابقة" title="الصفحة السابقة">
+              <span class="pdf-side-nav-icon" aria-hidden="true">▲</span>
+              <span class="pdf-side-nav-text">سابق</span>
+            </button>
+            <div class="pdf-side-nav-meta">
+              <span data-side-page-label>1</span>
+              <small data-side-page-total>/ 241</small>
+            </div>
+            <button type="button" class="pdf-side-nav-btn pdf-side-nav-primary" data-side-next aria-label="الصفحة التالية" title="الصفحة التالية — أو مرّر بالماوس">
+              <span class="pdf-side-nav-icon" aria-hidden="true">▼</span>
+              <span class="pdf-side-nav-text">التالي</span>
+            </button>
+          </nav>
           <div class="section-flash" data-section-flash lang="ar" dir="rtl" aria-live="polite" aria-label="إشعار التنقل"></div>
         </div>
 
-        <div class="page-search-dock">
-          <div class="viewer-search-wrap viewer-search-wrap-primary">
-            <input type="search" class="search-input" data-index-search placeholder="اكتب رقم صفحة أو جملة كاملة للبحث..." aria-label="بحث أساسي في الكتاب">
-            <button class="btn primary" type="button" data-primary-search-btn>⌕ بحث</button>
+        <div class="page-search-dock" data-search-dock hidden>
+          <div class="page-search-dock-head">
+            <strong>بحث في الدليل المفيد</strong>
+            <button class="icon-btn close-btn" type="button" data-close-search-dock aria-label="إغلاق نتائج البحث">✕</button>
           </div>
           <div class="page-search-results" data-primary-search-results aria-live="polite">
-            <div class="empty">اكتب كلمة دلالية أو رقم صفحة ثم اضغط بحث.</div>
+            <div class="empty">اكتب في مربع بحث الفهرس ثم اضغط بحث.</div>
           </div>
         </div>
 
         <div class="floating-controls" data-float-controls>
-          <button class="icon-btn" data-prev-page aria-label="الصفحة السابقة" title="الصفحة السابقة">⟨</button>
-          <button class="icon-btn" data-next-page aria-label="الصفحة التالية" title="الصفحة التالية">⟩</button>
-          <button class="icon-btn" data-quick-nav-toggle aria-label="بحث وتنقل سريع" title="بحث وتنقل سريع">⌕</button>
-          <button class="icon-btn" data-zoom-out aria-label="تصغير" title="تصغير">－</button>
-          <button class="icon-btn" data-zoom-in aria-label="تكبير" title="تكبير">＋</button>
-          <button class="icon-btn" data-download-pdf aria-label="تحميل الملف" title="تحميل الملف">⬇</button>
-          <button class="icon-btn" data-fullscreen aria-label="وضع ملء الشاشة" title="وضع ملء الشاشة">⛶</button>
+          <button class="icon-btn" data-prev-page aria-label="الصفحة السابقة" title="سابق">⟨</button>
+          <span class="floating-page-label" data-floating-page>1</span>
+          <button class="icon-btn" data-next-page aria-label="الصفحة التالية" title="التالي">⟩</button>
+          <button class="icon-btn" type="button" data-zoom-out aria-label="تصغير" title="تصغير">－</button>
+          <button class="icon-btn" type="button" data-zoom-in aria-label="تكبير" title="تكبير">＋</button>
+          <button class="icon-btn" type="button" data-fullscreen aria-label="ملء الشاشة" title="ملء الشاشة">⛶</button>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><div class="container footer-inner"><div class="stack"><strong>مكتبة النور الرقمية</strong><p class="muted">تجربة قراءة سينمائية للكتب الإسلامية مع تنقل ذكي.</p></div><nav class="footer-links"><a href="index.html">الرئيسية</a><a href="library.html">المكتبة</a><a href="viewer.html">العارض</a><a href="categories.html">التصنيفات</a><a href="search.html">البحث</a><a href="dashboard.html">لوحة التحكم</a><a href="about.html">من نحن</a><a href="contact.html">تواصل معنا</a></nav></div><div class="container" style="padding: 0 0 1.2rem; text-align:center;"><p class="muted">حقوق الملكية ترجع إلى الدكتورة نجوى علوان</p></div></footer>
+  <footer class="footer"><div class="container footer-inner"><div class="stack"><strong>منصة الدليل المفيد</strong><p class="muted">تجربة قراءة سينمائية — إعداد الدكتورة نجوى علوان بإشراف الشيخ بسيوني أبو يوسف.</p></div><nav class="footer-links"><a href="index.html">الرئيسية</a><a href="library.html">المكتبة</a><a href="viewer.html">العارض</a><a href="categories.html">التصنيفات</a><a href="search.html">البحث</a><a href="dashboard.html">لوحة التحكم</a><a href="about.html">من نحن</a><a href="contact.html">تواصل معنا</a></nav></div><div class="container" style="padding: 0 0 1.2rem; text-align:center;"><p class="muted">حقوق المحتوى: الدكتورة نجوى علوان — الفكرة والتصميم: الشيخ بسيوني أبو يوسف</p></div></footer>
 
-  <script src="assets/js/platform.js?v=20260422-2"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.js"></script>
-  <script src="assets/js/viewer.js?v=20260523-21"></script>
+  <script src="assets/js/platform.js?v=20260709-pwa-compressed"></script>
+  <script type="module" src="assets/js/pdf-bootstrap.mjs"></script>
 </body>
 </html>
